@@ -1,5 +1,5 @@
 # terraform-openstack-images
-Terraform module for managing OpenStack Images
+Terraform module for managing RAW OpenStack Images
 
 ## CentOS
 
