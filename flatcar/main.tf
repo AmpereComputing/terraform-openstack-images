@@ -1,15 +1,21 @@
 ## FlatCar Linux
 #
+#variable "terraform_image_cache_path" {
+#  description = "The path to the .terraform/image_cache in the users home directory."
+#  default     = "${pathexpand("~/.terraform/image_cache")}"
+#}
+
 
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-flatcar-stable" {
   provisioner "local-exec" {
-    command = "flatcar_image.sh stable"
+    command = "./flatcar_image.sh stable"
   }
 }
 resource "openstack_images_image_v2" "flatcar-2023_50-stable" {
   name   = "flatcarlinux-2023.50-stable"
-  local_file_path = "~/.terraform/image_cache/flatcar_production_openstack_image.img"
+  local_file_path = "${var.terraform_image_cache_path}/flatcar_production_openstack_image.img"
+  local_file_path = "${pathexpand("~/.terraform/image_cache/flatcar_production_openstack_image.img")}"
   container_format = "bare"
   disk_format = "raw"
   depends_on = [

@@ -3,6 +3,7 @@ Terraform module for managing RAW OpenStack Images
 
 ## CentOS
 
+* [centos/centos_image.sh](centos/centos_image.sh)
 * [centos/main.tf](centos/main.tf)
 
 ## CirrOS
@@ -38,4 +39,5 @@ Terraform module for managing RAW OpenStack Images
 * [rancheros/main.tf](rancheros/main.tf)
 
 ## Ubuntu
+
 * [ubuntu/main.tf](ubuntu/main.tf)
