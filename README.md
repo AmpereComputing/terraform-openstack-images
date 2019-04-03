@@ -37,6 +37,11 @@ Terraform module for managing RAW OpenStack Images
 * [flatcar/main.tf](flatcar/main.tf)
 * [Flatcar(stable) Cloud Images](https://stable.release.flatcar-linux.net/amd64-usr/current)
 
+## FreeBSD
+
+* [freebsd/freebsd_image.sh](freebsd__image.sh)
+* [freebsd/main.tf](freebsd/main.tf)
+
 ## Kali-Linux
 
 * [kali-linux/kali_linux_cloudimg.sh](kali-linux/kali_linux_cloudimg.sh)
@@ -57,3 +62,5 @@ Terraform module for managing RAW OpenStack Images
 * [ubuntu/main.tf](ubuntu/main.tf)
 * [ubuntu/ubuntu_image.sh](ubuntu/ubuntu_image.sh)
 * [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/daily/server/)
+
+
