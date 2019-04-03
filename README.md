@@ -21,6 +21,11 @@ Terraform module for managing RAW OpenStack Images
 * [coreos/coreos_image.sh](coreos/coreos_image.sh)
 * [coreos/main.tf](coreos/main.tf)
 
+## Debian
+
+* [debian/main.tf](debian/main.tf)
+* [Debian OpenStack Images](https://cdimage.debian.org/cdimage/openstack/current-9/)
+
 ## Fedora
 
 * [fedora/fedora_atomic_image.sh](fedora/fedora_atomic_image.sh)
