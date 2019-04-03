@@ -2,9 +2,6 @@
 IMAGE_CACHE=$HOME/.terraform/image_cache
 
 PROJECT_DIR=`pwd`
-STABLE='2023.5.0'
-BETA='2079.1.0'
-ALPHA='2093.0.0'
 
 echo "Image Cache Location: "
 echo $IMAGE_CACHE
@@ -27,19 +24,6 @@ then
   exit
 fi
 FLATCAR_RELEASE=$1
-if [ $FLATCAR_RELEASE == 'stable' ]
-then
-  FLATCAR_VERSION=$STABLE
-fi
-if [ $FLATCAR_RELEASE == 'beta' ]
-then
-  FLATCAR_VERSION=$BETA
-fi
-if [ $FLATCAR_RELEASE == 'alpha' ]
-then
-  FLATCAR_VERSION=$ALPHA
-fi
-
 if [ -e flatcar_production_openstack_image.img ]
   echo "Flatcar image found.  Removing image."
   rm -rf flatcar_production_openstack_image.*
@@ -48,7 +32,7 @@ then
   echo
 fi
 echo -n "Downloading:"
-wget -c https://$FLATCAR_RELEASE.release.flatcar-linux.net/amd64-usr/$FLATCAR_VERSION/flatcar_production_openstack_image.img.bz2
+wget -c https://$FLATCAR_RELEASE.release.flatcar-linux.net/amd64-usr/current/flatcar_production_openstack_image.img.bz2
 echo -n "Extracting:"
 bunzip2 -v -d flatcar_production_openstack_image.img.bz2
 cd $PROJECT_DIR

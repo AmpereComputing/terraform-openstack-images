@@ -22,6 +22,9 @@ resource "null_resource" "download-extract-image-centos-6_1901" {
   provisioner "local-exec" {
     command = "./centos_image.sh 6"
   }
+  depends_on = [
+    "openstack_images_image_v2.centos7_1901",
+  ]
 }
 resource "openstack_images_image_v2" "centos6_1901" {
   name   = "centos-6.1901-x86_64-GenericCloud"

@@ -1,6 +1,12 @@
 # terraform-openstack-images
 Terraform module for managing RAW OpenStack Images
 
+## Archlinux
+
+* [archlinux/archlinux_image.sh](archlinux/archlinux_image.sh)
+* [archlinux/main.tf](archlinux/main.tf)
+* [Archlinux OpenStack Images](https://linuximages.de/openstack/arch/)
+
 ## CentOS
 
 * [centos/centos_image.sh](centos/centos_image.sh)
@@ -24,6 +30,7 @@ Terraform module for managing RAW OpenStack Images
 
 * [flatcar/flatcar_image.sh](flatcar/flatcar_image.sh)
 * [flatcar/main.tf](flatcar/main.tf)
+* [Flatcar(stable) Cloud Images](https://stable.release.flatcar-linux.net/amd64-usr/current)
 
 ## Kali-Linux
 
@@ -33,6 +40,7 @@ Terraform module for managing RAW OpenStack Images
 ## OpenSuSE
 
 * [opensuse/main.tf](opensuse/main.tf)
+* [openSUSE Cloud Images](http://download.opensuse.org/repositories/Cloud:/Images:/)
 
 ## RancherOS
 
@@ -41,3 +49,5 @@ Terraform module for managing RAW OpenStack Images
 ## Ubuntu
 
 * [ubuntu/main.tf](ubuntu/main.tf)
+* [ubuntu/ubuntu_image.sh](ubuntu/ubuntu_image.sh)
+* [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/daily/server/)
