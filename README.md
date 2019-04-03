@@ -1,4 +1,4 @@
-# terraform-openstack-images
+# terraform-openstack-raw-images
 Terraform module for managing RAW OpenStack Images
 
 ## Archlinux
