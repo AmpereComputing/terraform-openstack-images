@@ -1,10 +1,5 @@
 ## FlatCar Linux
 #
-#variable "terraform_image_cache_path" {
-#  description = "The path to the .terraform/image_cache in the users home directory."
-#  default     = "${pathexpand("~/.terraform/image_cache")}"
-#}
-
 
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-flatcar-stable" {

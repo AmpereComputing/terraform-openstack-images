@@ -2,7 +2,7 @@
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-coreos-stable" {
   provisioner "local-exec" {
-    command = "coreos_image.sh stable"
+    command = "./coreos_image.sh stable"
   }
 }
 resource "openstack_images_image_v2" "coreos_2093_00_stable" {
@@ -21,7 +21,7 @@ resource "openstack_images_image_v2" "coreos_2093_00_stable" {
 #
 #resource "null_resource" "download-extract-image-coreos-alpha" {
 #  provisioner "local-exec" {
-#    command = "coreos_image.sh alpha"
+#    command = "./coreos_image.sh alpha"
 #  }
 #}
 #resource "openstack_images_image_v2" "coreos-latest-alpha" {
@@ -41,7 +41,7 @@ resource "openstack_images_image_v2" "coreos_2093_00_stable" {
 #
 #resource "openstack_images_image_v2" "coreos-latest-beta" {
 #  provisioner "local-exec" {
-#    command = "coreos_image.sh beta"
+#    command = "./coreos_image.sh beta"
 #  }
 #}
 #resource "openstack_images_image_v2" "coreos-latest-beta" {

@@ -14,8 +14,8 @@ cd $IMAGE_CACHE
 
 if [ -e Fedora-AtomicHost-29.raw ]
 then
-  echo "Fedora-AtomicHost-29.rawimage found.  Removing image."
-  rm -rf Fedora-AtomicHost-29.raw.xz
+  echo "Fedora-AtomicHost-29.raw image found.  Removing image."
+  rm -rf Fedora-AtomicHost-29.*
 else
   echo "No previous Fedora-AtomicHost image found."
 fi
