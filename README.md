@@ -50,6 +50,7 @@ Terraform module for managing RAW OpenStack Images
 ## RancherOS
 
 * [rancheros/main.tf](rancheros/main.tf)
+* [rancheros/ros_image.sh](rancheros/ros_image.sh)
 
 ## Ubuntu
 
