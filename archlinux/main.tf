@@ -1,4 +1,4 @@
-# OpenSuSE LEAP
+# Archlinux LATEST
 resource "null_resource" "download-extract-image-archlinux-latest" {
   provisioner "local-exec" {
     command = "./archlinux_image.sh"
