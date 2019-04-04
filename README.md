@@ -63,4 +63,8 @@ Terraform module for managing RAW OpenStack Images
 * [ubuntu/ubuntu_image.sh](ubuntu/ubuntu_image.sh)
 * [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/daily/server/)
 
+## Vyos
+
+* [vyos/main.tf](vyos/main.tf)
+* [Vyos.io](https://vyos.io)
 
