@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 IMAGE_CACHE=$HOME/.terraform/image_cache
 
 if [ ! -d $IMAGE_CACHE ]; then
