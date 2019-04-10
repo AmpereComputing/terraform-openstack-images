@@ -1,6 +1,6 @@
 resource "null_resource" "download-extract-image-bionic" {
   provisioner "local-exec" {
-    command = "./ubuntu_image.sh bionic"
+    command = "sh ubuntu_image.sh bionic"
   }
 }
 resource "openstack_images_image_v2" "ubuntu-1804-bionic" {
@@ -18,7 +18,7 @@ resource "openstack_images_image_v2" "ubuntu-1804-bionic" {
 
 resource "null_resource" "download-extract-image-xenial" {
   provisioner "local-exec" {
-    command = "./ubuntu_image.sh xenial"
+    command = "sh ubuntu_image.sh xenial"
   }
 }
 resource "openstack_images_image_v2" "ubuntu-1604-xenial" {
@@ -36,7 +36,7 @@ resource "openstack_images_image_v2" "ubuntu-1604-xenial" {
 }
 resource "null_resource" "download-extract-image-trusty" {
   provisioner "local-exec" {
-    command = "./ubuntu_image.sh trusty"
+    command = "sh ubuntu_image.sh trusty"
   }
 }
 resource "openstack_images_image_v2" "ubuntu-1404-trusty" {

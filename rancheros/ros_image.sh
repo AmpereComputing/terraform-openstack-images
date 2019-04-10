@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 IMAGE_CACHE=$HOME/.terraform/image_cache
+
+if [ ! -d $IMAGE_CACHE ]; then
+  mkdir -p $IMAGE_CACHE
+fi
+
 RANCHEROS_RELEASE=$1
 
 PROJECT_DIR=`pwd`

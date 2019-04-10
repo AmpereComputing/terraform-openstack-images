@@ -1,7 +1,7 @@
 # OpenSuSE LEAP
 resource "null_resource" "download-extract-image-opensuse-leap-15_0" {
   provisioner "local-exec" {
-    command = "./opensuse_image.sh"
+    command = "sh opensuse_image.sh"
   }
 }
 

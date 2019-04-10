@@ -1,7 +1,7 @@
 # CentOS
 resource "null_resource" "download-extract-image-centos-7_1901" {
   provisioner "local-exec" {
-    command = "./centos_image.sh 7"
+    command = "sh centos_image.sh 7"
   }
 }
 resource "openstack_images_image_v2" "centos7_1901" {

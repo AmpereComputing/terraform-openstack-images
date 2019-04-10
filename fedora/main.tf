@@ -1,7 +1,7 @@
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-fedora-atomic" {
   provisioner "local-exec" {
-    command = "./fedora_atomic_image.sh"
+    command = "sh fedora_atomic_image.sh"
   }
 }
 

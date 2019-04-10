@@ -4,7 +4,7 @@
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-flatcar-stable" {
   provisioner "local-exec" {
-    command = "./flatcar_image.sh stable"
+    command = "sh flatcar_image.sh stable"
   }
 }
 resource "openstack_images_image_v2" "flatcar-2023_50-stable" {

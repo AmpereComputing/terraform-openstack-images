@@ -2,7 +2,7 @@
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-kali-linux" {
   provisioner "local-exec" {
-    command = "./kali_linux_cloudimg.sh"
+    command = "sh kali_linux_cloudimg.sh"
   }
 }
 resource "openstack_images_image_v2" "kali-linux-2019_1" {

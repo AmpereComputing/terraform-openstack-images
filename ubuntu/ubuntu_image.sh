@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 IMAGE_CACHE=$HOME/.terraform/image_cache
 
+
+if [ ! -d $IMAGE_CACHE ]; then
+  mkdir -p $IMAGE_CACHE
+fi
+
 PROJECT_DIR=`pwd`
 
 echo "Image Cache Location: "

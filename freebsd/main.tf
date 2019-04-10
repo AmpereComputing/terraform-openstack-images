@@ -1,7 +1,7 @@
 # Archlinux LATEST
 resource "null_resource" "download-extract-image-freebsd-release-12" {
   provisioner "local-exec" {
-    command = "./freebsd_image.sh"
+    command = "sh freebsd_image.sh"
   }
 }
 

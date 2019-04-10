@@ -2,7 +2,7 @@
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-coreos-stable" {
   provisioner "local-exec" {
-    command = "./coreos_image.sh stable"
+    command = "sh coreos_image.sh stable"
   }
 }
 resource "openstack_images_image_v2" "coreos_2093_00_stable" {
