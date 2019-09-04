@@ -22,7 +22,7 @@ then
 !! ERROR: No CENTOS_RELEASE argument supplied to script. Please  !!
 !! supply '6 or 7' as an option to the script.                   !!
 !!                                                               !!
-!! USAGE: ./flatcar_images.sh (stable|beta|alpha)                !! 
+!! USAGE: ./centos_images.sh (6|7)                !! 
 !! ------------------------------------------------------------- !!"
   cd $PROJECT_DIR
   exit
