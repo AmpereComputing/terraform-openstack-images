@@ -62,9 +62,12 @@ module "kali-linux" {
   enable_kali_linux_2019_3_amd64_qcow2 = false
   enable_kali_linux_2019_3_amd64_raw = false
 }
-module "raw_opensuse_img" {
+module "opensuse" {
   source = "./opensuse"
-  enable_opensuse = false
+  enable_opensuse_leap_150_x86_64_qcow2 = false
+  enable_opensuse_leap_150_x86_64_raw = false
+  enable_opensuse_leap_151_x86_64_qcow2 = false
+  enable_opensuse_leap_151_x86_64_raw = false
 }
 module "rancheros" {
   source = "./rancheros"
