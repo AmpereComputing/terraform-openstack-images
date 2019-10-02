@@ -3,9 +3,12 @@ module "archlinux" {
   enable_archlinux_latest_x86_64_qcow2 = false
   enable_archlinux_latest_x86_64_raw = false
 }
-module "raw_centos_img" {
+module "centos" {
   source = "./centos"
-  enable_centos = false
+  enable_centos_7_1901_x86_64_qcow2 = false
+  enable_centos_7_1901_x86_64_raw = false
+  enable_centos_6_1901_x86_64_qcow2 = false
+  enable_centos_6_1901_x86_64_raw = false
 }
 module "centos-atomic" {
   source = "./centos-atomic"
