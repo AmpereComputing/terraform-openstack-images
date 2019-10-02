@@ -1,6 +1,7 @@
-module "raw_archlinux_img" {
+module "archlinux_latest_x86_64" {
   source = "./archlinux"
-  enable_archlinux = false
+  enable_archlinux_latest_x86_64_qcow2 = false
+  enable_archlinux_latest_x86_64_raw = false
 }
 module "raw_centos_img" {
   source = "./centos"
@@ -8,7 +9,8 @@ module "raw_centos_img" {
 }
 module "raw_cirros_img" {
   source = "./cirros"
-  enable_cirros = false
+  enable_cirros_040_x86_64_qcow2 = false
+  enable_cirros_040_x86_64_raw = false
 }
 module "raw_coreos_img" {
   source = "./coreos"

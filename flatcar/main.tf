@@ -9,7 +9,6 @@ resource "null_resource" "download-extract-image-flatcar-stable" {
 }
 resource "openstack_images_image_v2" "flatcar-2023_50-stable" {
   name   = "flatcarlinux-2023.50-stable"
-  local_file_path = "${var.terraform_image_cache_path}/flatcar_production_openstack_image.img"
   local_file_path = "${pathexpand("~/.terraform/image_cache/flatcar_production_openstack_image.img")}"
   container_format = "bare"
   disk_format = "raw"

@@ -21,7 +21,7 @@ then
   echo "arch-openstack-LATEST-image-bootstrap.qcow2 image found.  Removing image."
   rm -rf arch-openstack-LATEST-image-bootstrap.*
 else
-  echo "No previous OpenSuSE image found."
+  echo "No previous Archlinux image found."
 fi
 wget https://linuximages.de/openstack/arch/arch-openstack-LATEST-image-bootstrap.qcow2 
 echo "Converting qcow image to raw"
