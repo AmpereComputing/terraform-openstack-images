@@ -28,15 +28,26 @@ then
   exit
 fi
 COREOS_RELEASE=$1
-if [ -e coreos_production_openstack_image.img ]
+
+if [ ! -d $IMAGE_CACHE/$COREOS_RELEASE ]; then
+  mkdir -p $IMAGE_CACHE/$COREOS_RELEASE
+fi
+
+
+
+
+if [ -e $COREOS_RELEASE/coreos_production_openstack_image.img ]
   echo "CoreOS image found.  Removing image."
-  rm -rf coreos_production_openstack_image.*
+  rm -rf $COREOS_RELEASE/coreos_production_openstack_image.*
 then
   echo "Proceeding to downloading CoreOS $1 images."
   echo
 fi
+cd $COREOS_RELEASE
 echo -n "Downloading:"
 wget -c https://${COREOS_RELEASE}.release.core-os.net/amd64-usr/current/coreos_production_openstack_image.img.bz2
 echo -n "Extracting:"
 bunzip2 -v -d coreos_production_openstack_image.img.bz2
+echo "Converting qcow image to raw"
+qemu-img convert -f qcow2 -O raw coreos_production_openstack_image.img coreos_production_openstack_image.raw
 cd $PROJECT_DIR

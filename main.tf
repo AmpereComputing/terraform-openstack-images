@@ -7,14 +7,19 @@ module "raw_centos_img" {
   source = "./centos"
   enable_centos = false
 }
-module "raw_cirros_img" {
+module "cirros_040_x86_64" {
   source = "./cirros"
   enable_cirros_040_x86_64_qcow2 = false
   enable_cirros_040_x86_64_raw = false
 }
-module "raw_coreos_img" {
+module "coreos_current_amd64" {
   source = "./coreos"
-  enable_coreos = false
+  enable_coreos_current_stable_amd64_qcow2 = false
+  enable_coreos_current_stable_amd64_raw = false
+  enable_coreos_current_alpha_amd64_qcow2 = false
+  enable_coreos_current_alpha_amd64_raw = false
+  enable_coreos_current_beta_amd64_qcow2 = false
+  enable_coreos_current_beta_amd64_raw = false
 }
 module "raw_debian_img" {
   source = "./debian"
@@ -32,9 +37,10 @@ module "raw_freebsd_img" {
   source = "./freebsd"
   enable_freebsd = false
 }
-module "raw_kali-linux_img" {
+module "kali_linux_current_amd64" {
   source = "./kali-linux"
-  enable_kali-linux = false
+  enable_kali_linux_2019_3_amd64_qcow2 = false
+  enable_kali_linux_2019_3_amd64_raw = false
 }
 module "raw_opensuse_img" {
   source = "./opensuse"
