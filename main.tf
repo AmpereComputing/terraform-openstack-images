@@ -74,9 +74,14 @@ module "rancheros" {
   enable_rancheros_openstack_amd64_qcow2 = false
   enable_rancheros_openstack_amd64_raw = false
 }
-module "raw_ubuntu_img" {
+module "ubuntu" {
   source = "./ubuntu"
-  enable_ubuntu = false
+  enable_ubuntu_1804_amd64_qcow2 = false
+  enable_ubuntu_1804_amd64_raw = false
+  enable_ubuntu_1604_amd64_qcow2 = false
+  enable_ubuntu_1604_amd64_raw = false
+  enable_ubuntu_1404_amd64_qcow2 = false
+  enable_ubuntu_1404_amd64_raw = false
 }
 module "vyos" {
   source = "./vyos"
