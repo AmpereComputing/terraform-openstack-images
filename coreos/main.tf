@@ -1,8 +1,9 @@
 ## Coreos
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-coreos-stable-amd64" {
+  count = var.enable_coreos_current_stable_amd64_qcow2 || var.enable_coreos_current_stable_amd64_raw ? 1:0
   provisioner "local-exec" {
-    command = "sh coreos_image.sh stable"
+    command = "${path.module}/coreos_image.sh stable"
   }
 }
 resource "openstack_images_image_v2" "coreos_current_stable_amd64_qcow2" {
@@ -35,8 +36,9 @@ resource "openstack_images_image_v2" "coreos_current_00_stable_amd64_raw" {
 }
 
 resource "null_resource" "download-extract-image-coreos-alpha-amd64" {
+  count = var.enable_coreos_current_alpha_amd64_qcow2 || var.enable_coreos_current_alpha_amd64_raw ? 1:0
   provisioner "local-exec" {
-    command = "./coreos_image.sh alpha"
+    command = "${path.module}/coreos_image.sh alpha"
   }
 }
 
@@ -72,8 +74,9 @@ resource "openstack_images_image_v2" "coreos_current_alpha_amd64_raw" {
 }
 
 resource "null_resource" "download-extract-image-coreos-beta-amd64" {
+  count = var.enable_coreos_current_beta_amd64_qcow2 || var.enable_coreos_current_beta_amd64_raw ? 1:0
   provisioner "local-exec" {
-    command = "./coreos_image.sh beta"
+    command = "${path.module}/coreos_image.sh beta"
   }
 }
 resource "openstack_images_image_v2" "coreos_current_beta_amd64_qcow2" {

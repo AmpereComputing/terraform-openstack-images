@@ -1,4 +1,26 @@
-variable "enable_fedora" {
-  description = "Enable "
+variable "enable_fedora_atomic_29_x86_64_qcow2" {
+  description = "Enable Fedora Atomic Host 29 x86_64 QCOW2 Images"
+  default     = 0
+}
+variable "enable_fedora_atomic_29_x86_64_raw" {
+  description = "Enable Fedora Atomic Host 29 x86_64 RAW Images"
+  default     = 0
+}
+
+variable "enable_fedora_cloud_base_29_x86_64_qcow2" {
+  description = "Enable Fedora 29 x86_64 QCOW2 Images"
+  default     = 0
+}
+variable "enable_fedora_cloud_base_29_x86_64_raw" {
+  description = "Enable Fedora 29 x86_64 Raw Images"
+  default     = 0
+}
+
+variable "enable_fedora_cloud_base_30_x86_64_qcow2" {
+  description = "Enable Fedora 30 x86_64 QCOW2 Images"
+  default     = 0
+}
+variable "enable_fedora_cloud_base_30_x86_64_raw" {
+  description = "Enable Fedora 30 x86_64 Raw Images"
   default     = 0
 }

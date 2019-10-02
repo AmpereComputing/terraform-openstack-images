@@ -28,15 +28,25 @@ then
   exit
 fi
 FLATCAR_RELEASE=$1
-if [ -e flatcar_production_openstack_image.img ]
+if [ ! -d $IMAGE_CACHE/$FLATCAR_RELEASE ]; then
+  mkdir -p $IMAGE_CACHE/$FLATCAR_RELEASE
+fi
+
+
+
+if [ -e $FLATCAR_RELEASE/flatcar_production_openstack_image.img ]
   echo "Flatcar image found.  Removing image."
-  rm -rf flatcar_production_openstack_image.*
+  rm -rf $FLATCAR_RELEASE/flatcar_production_openstack_image.*
 then
   echo "Proceeding to downloading Flatcar $1 images."
   echo
 fi
+cd $FLATCAR_RELEASE
 echo -n "Downloading:"
 wget -c https://$FLATCAR_RELEASE.release.flatcar-linux.net/amd64-usr/current/flatcar_production_openstack_image.img.bz2
 echo -n "Extracting:"
 bunzip2 -v -d flatcar_production_openstack_image.img.bz2
+echo "Converting qcow image to raw"
+qemu-img convert -f qcow2 -O raw flatcar_production_openstack_image.img flatcar_production_openstack_image.raw
+
 cd $PROJECT_DIR

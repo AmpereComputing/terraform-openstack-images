@@ -1,6 +1,7 @@
 # Kali-Linux
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-kali-linux-amd64" {
+  count = var.enable_kali_linux_2019_3_amd64_qcow2 || var.enable_kali_linux_2019_3_amd64_raw ? 1:0
   provisioner "local-exec" {
     command = "sh kali_linux_cloudimg.sh"
   }

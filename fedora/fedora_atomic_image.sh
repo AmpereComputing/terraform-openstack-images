@@ -25,4 +25,5 @@ else
 fi
 wget https://download.fedoraproject.org/pub/alt/atomic/stable/Fedora-29-updates-20190318.0/AtomicHost/x86_64/images/Fedora-AtomicHost-29-20190318.0.x86_64.raw.xz -O Fedora-AtomicHost-29.raw.xz
 unxz -v Fedora-AtomicHost-29.raw.xz
+qemu-img convert -f raw -O qcow2 Fedora-AtomicHost-29.raw Fedora-AtomicHost-29.qcow2
 cd $PROJECT_DIR

@@ -1,6 +1,6 @@
 # Run script to download and extract image file befor uploading to glance
 resource "null_resource" "download-extract-image-centos-atomic-x86_64" {
-  count = var.enable_centos_atomic_host_x86_64 ? 1:0
+  count = var.enable_centos_atomic_host_x86_64_qcow2 || var.enable_centos_atomic_host_x86_64_raw ? 1:0
   provisioner "local-exec" {
     command = "sh centos_atomic_image.sh"
   }
