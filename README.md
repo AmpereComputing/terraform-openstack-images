@@ -1,5 +1,5 @@
-# terraform-openstack-raw-images
-Terraform module for managing RAW OpenStack Images
+# terraform-openstack-x86_64-images
+Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 
 ## Archlinux
 
