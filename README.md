@@ -1,7 +1,11 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Ampere Computing](https://avatars2.githubusercontent.com/u/34519842?s=400&u=1d29afaac44f477cbb0226139ec83f73faefe154&v=4)
 
 # terraform-openstack-x86_64-images
-Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64 and AARCH64
+
 
 | Cloud Image | versions | x86_64 | aarch64 | QCOW2 | RAW |
 | ------------------- | --- | ---| ---| ----- | --- |
