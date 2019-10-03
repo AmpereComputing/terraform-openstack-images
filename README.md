@@ -21,6 +21,7 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 | CoreOS | Beta | X | | X | X |
 | Debian | 9 | X | X | X | X |
 | Debian | 10 | X | X | X | X |
+| Devuan | ASCII 2.0.0 | X | | X | X |
 | Fedora | 29 | X | X | X | X |
 | Fedora | 30 | X | X | X | X |
 | Fedora-Atomic | 29 | X | | X | X | 
@@ -71,6 +72,12 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 
 * [debian/main.tf](debian/main.tf)
 * [debian/main.tf](debian/variables.tf)
+
+### Devuan
+
+* [devuan/devuan_image.sh](devuan/devuan_image.sh)
+* [devuan/main.tf](devuan/main.tf)
+* [devuan/main.tf](devuan/variables.tf)
 
 ### Fedora
 
