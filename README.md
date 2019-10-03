@@ -44,11 +44,26 @@ git clone https://github.com/AmpereComputing/terraform-openstack-images
 cd terraform-openstack-images
 ```
 Modify the setting for the images you want loaded to "true" in the main.tf
-Source your OpenStack credentials.
+For example to enable the CentOS 7 AARCH64 image find the following line in the main.tf
+
+```
+enable_centos_7_aarch64_qcow2 = false
+```
+
+Change the line from false to true like in the following example.
+
+```
+enable_centos_7_aarch64_qcow2 = true
+```
+
+Remember to source your OpenStack credentials.
+
 ```
  . /etc/kolla/admin-openrc.sh
 ```
+
 Execute terraform.
+
 ```
 terraform init
 terraform plan
