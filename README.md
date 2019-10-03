@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # terraform-openstack-x86_64-images
 Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 
