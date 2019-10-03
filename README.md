@@ -4,8 +4,10 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64 and AARCH64
+Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenStack.
 
+
+## Images 
 
 | Cloud Image | versions | x86_64 | aarch64 | QCOW2 | RAW |
 | ------------------- | --- | ---| ---| ----- | --- |
