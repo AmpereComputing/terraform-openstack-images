@@ -103,3 +103,5 @@ Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 * [vyos/main.tf](vyos/main.tf)
 * [vyos/variables.tf](vyos/variables.tf)
 * [Vyos.io](https://vyos.io)
+
+## [License](LICENSE)
