@@ -64,6 +64,7 @@ resource "openstack_images_image_v2" "centos-6-1901-x86_64-qcow2" {
 
 # CentOS AARCH64
 resource "null_resource" "download-extract-image-centos-7-aarch64" {
+  count = var.enable_centos_7_aarch64_raw || var.enable_centos_7_aarch64_qcow2 ? 1:0
   provisioner "local-exec" {
     command = "${path.module}/centos_aarch64_image.sh 7"
   }
