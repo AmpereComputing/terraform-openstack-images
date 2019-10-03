@@ -3,21 +3,22 @@
 # terraform-openstack-x86_64-images
 Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 
-| Cloud Image | QCOW2 | RAW |
-| ------------------- | ----- | --- |
-| Archlinux | X | X |
-| CentOS | X | X |
-| CirrOS | X | X |
-| CoreOS | X | X |
-| Debian | X | X |
-| Fedora | X | X |
-| Flatcar Linux | X | X |
-| FreeBSD | X | X |
-| Kali-Linux | X | X |
-| OpenSuSE | X | X |
-| RancherOS | X | X |
-| Ubuntu | X | X |
-| Vyos | X | X |
+| Cloud Image | versions | QCOW2 | RAW |
+| ------------------- | --- | ----- | --- |
+| Archlinux | LATEST | X | X |
+| CentOS | 6.1901, 7.1901 | X | X |
+| CirrOS | 0.4.0 | X | X |
+| CoreOS | Stable, Alpha, Beta | X | X |
+| Debian | 9, 10 | X | X |
+| Fedora | Server 29, 30 Fedora-Atomic 29| X | X |
+| Fedora-Atomic | 29 | X | X |
+| Flatcar Linux | Stable, Alpha, Beta | X | X |
+| FreeBSD | 12.0 Release | X | X |
+| Kali-Linux | Rolling Latest| | X | X |
+| OpenSuSE | Leap 15.0 15.1 |X | X |
+| RancherOS | 5.4 | X | X |
+| Ubuntu |Trusty, Xenial, Bionic | X | X |
+| Vyos | Rolling | X | X |
 
 ## Assets
 
