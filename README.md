@@ -47,7 +47,6 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 * [archlinux/archlinux_image.sh](archlinux/archlinux_image.sh)
 * [archlinux/main.tf](archlinux/main.tf)
 * [archlinux/varibles.tf](archlinux/variables.tf)
-* [Archlinux OpenStack Images](https://linuximages.de/openstack/arch/)
 
 ### CentOS
 
@@ -67,14 +66,11 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 * [coreos/coreos_image.sh](coreos/coreos_image.sh)
 * [coreos/main.tf](coreos/main.tf)
 * [coreos/variables.tf](coreos/variables.tf)
-* [CoreOS (stable) Cloud Images](https://stable.release.core-os.net/amd64-usr/current)
 
 ### Debian
 
 * [debian/main.tf](debian/main.tf)
 * [debian/main.tf](debian/variables.tf)
-* [Debian 9 OpenStack Images](https://cdimage.debian.org/cdimage/openstack/current-9/)
-* [Debian 10 OpenStack Images](https://cdimage.debian.org/cdimage/openstack/current-10/)
 
 ### Fedora
 
@@ -89,7 +85,6 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 * [flatcar/flatcar_image.sh](flatcar/flatcar_image.sh)
 * [flatcar/main.tf](flatcar/main.tf)
 * [flatcar/variables.tf](flatcar/variables.tf)
-* [Flatcar(stable) Cloud Images](https://stable.release.flatcar-linux.net/amd64-usr/current)
 
 ### FreeBSD
 
@@ -109,7 +104,6 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 * [opensuse/opensuse_aarch64_image.sh](opensuse/opensuse_aarch64_image.sh)
 * [opensuse/main.tf](opensuse/main.tf)
 * [opensuse/variables.tf](opensuse/variables.tf)
-* [openSUSE Cloud Images](http://download.opensuse.org/repositories/Cloud:/Images:/)
 
 ### RancherOS
 
@@ -123,10 +117,19 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 * [ubuntu/ubuntu_arm64_image.sh](ubuntu/ubuntu_arm64_image.sh)
 * [ubuntu/main.tf](ubuntu/main.tf)
 * [ubuntu/variables.tf](ubuntu/variables.tf)
-* [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/daily/server/)
 
 ### Vyos
 
 * [vyos/main.tf](vyos/main.tf)
 * [vyos/variables.tf](vyos/variables.tf)
+
+## References
+
+* [Archlinux OpenStack Images](https://linuximages.de/openstack/arch/)
+* [CoreOS (stable) Cloud Images](https://stable.release.core-os.net/amd64-usr/current)
+* [Debian 9 OpenStack Images](https://cdimage.debian.org/cdimage/openstack/current-9/)
+* [Debian 10 OpenStack Images](https://cdimage.debian.org/cdimage/openstack/current-10/)
+* [Flatcar(stable) Cloud Images](https://stable.release.flatcar-linux.net/amd64-usr/current)
+* [openSUSE Cloud Images](http://download.opensuse.org/repositories/Cloud:/Images:/)
+* [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/daily/server/)
 * [Vyos.io](https://vyos.io)
