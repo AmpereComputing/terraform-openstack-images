@@ -69,6 +69,7 @@ Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 * [Vyos.io](https://vyos.io)
 
 | Linux Distribuition | QCOW2 | RAW |
+| ------------------- | ----- | --- |
 | Archlinux | X | X |
 | CentOS | X | X |
 | CirrOS | X | X |
