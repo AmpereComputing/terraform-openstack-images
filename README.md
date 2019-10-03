@@ -49,6 +49,7 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 ### CentOS
 
 * [centos/centos_image.sh](centos/centos_image.sh)
+* [centos/centos_aarch64_image.sh](centos/centos_aarch64_image.sh)
 * [centos/main.tf](centos/main.tf)
 * [centos/variables.tf](centos/varibles.tf)
 
@@ -75,6 +76,7 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 ### Fedora
 
 * [fedora/fedora_atomic_image.sh](fedora/fedora_atomic_image.sh)
+* [fedora/fedora_aarch64_image.sh](fedora/fedora_aarch64_server_image.sh)
 * [fedora/fedora_image.sh](fedora/fedora_image.sh)
 * [fedora/main.tf](fedora/main.tf)
 * [fedora/variables.tf](fedora/variables.tf)
@@ -88,7 +90,7 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 
 ### FreeBSD
 
-* [freebsd/freebsd_image.sh](freebsd__image.sh)
+* [freebsd/freebsd_image.sh](freebsd_image.sh)
 * [freebsd/main.tf](freebsd/main.tf)
 * [freebsd/variables.tf](freebsd/variables.tf)
 
@@ -101,6 +103,7 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 ### OpenSuSE
 
 * [opensuse/opensuse_image.sh](opensuse/opensuse_image.sh)
+* [opensuse/opensuse_aarch64_image.sh](opensuse/opensuse_aarch64_image.sh)
 * [opensuse/main.tf](opensuse/main.tf)
 * [opensuse/variables.tf](opensuse/variables.tf)
 * [openSUSE Cloud Images](http://download.opensuse.org/repositories/Cloud:/Images:/)
@@ -114,6 +117,7 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 ### Ubuntu
 
 * [ubuntu/ubuntu_image.sh](ubuntu/ubuntu_image.sh)
+* [ubuntu/ubuntu_arm64_image.sh](ubuntu/ubuntu_arm64_image.sh)
 * [ubuntu/main.tf](ubuntu/main.tf)
 * [ubuntu/variables.tf](ubuntu/variables.tf)
 * [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/daily/server/)
