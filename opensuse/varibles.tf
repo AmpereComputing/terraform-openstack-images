@@ -14,3 +14,12 @@ variable "enable_opensuse_leap_151_x86_64_raw" {
   description = "Enable openSUSE Leap 15.1 x86_64 RAW Images"
   default     = 0
 }
+
+variable "enable_opensuse_151_aarch64_raw" {
+  description = "Enable "
+  default     = 0
+}
+variable "enable_opensuse_151_aarch64_qcow2" {
+  description = "Enable "
+  default     = 0
+}

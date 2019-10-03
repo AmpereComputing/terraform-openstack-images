@@ -9,6 +9,8 @@ module "centos" {
   enable_centos_7_1901_x86_64_raw = false
   enable_centos_6_1901_x86_64_qcow2 = false
   enable_centos_6_1901_x86_64_raw = false
+  enable_centos_7_aarch64_qcow2 = false
+  enable_centos_7_aarch64_raw = false
 }
 module "centos-atomic" {
   source = "./centos-atomic"
@@ -35,6 +37,10 @@ module "debian" {
   enable_debian_9_amd64_raw = false
   enable_debian_10_amd64_qcow2 = false
   enable_debian_10_amd64_raw = false
+  enable_debian_9_arm64_qcow2 = false
+  enable_debian_9_arm64_raw = false
+  enable_debian_10_arm64_qcow2 = false
+  enable_debian_10_arm64_raw = false
 }
 module "fedora" {
   source = "./fedora"
@@ -44,6 +50,10 @@ module "fedora" {
   enable_fedora_cloud_base_29_x86_64_raw = false
   enable_fedora_cloud_base_30_x86_64_qcow2 = false
   enable_fedora_cloud_base_30_x86_64_raw = false
+  enable_fedora_server_29_aarch64_qcow2 = false
+  enable_fedora_server_29_aarch64_raw = false
+  enable_fedora_server_30_aarch64_qcow2 = false
+  enable_fedora_server_30_aarch64_raw = false
 }
 module "flatcar-linux" {
   source = "./flatcar"
@@ -71,6 +81,8 @@ module "opensuse" {
   enable_opensuse_leap_150_x86_64_raw = false
   enable_opensuse_leap_151_x86_64_qcow2 = false
   enable_opensuse_leap_151_x86_64_raw = false
+  enable_opensuse_151_aarch64_qcow2 = false
+  enable_opensuse_151_aarch64_raw = false
 }
 module "rancheros" {
   source = "./rancheros"
@@ -85,6 +97,12 @@ module "ubuntu" {
   enable_ubuntu_1604_amd64_raw = false
   enable_ubuntu_1404_amd64_qcow2 = false
   enable_ubuntu_1404_amd64_raw = false
+  enable_ubuntu_1804_bionic_arm64_qcow2 = false
+  enable_ubuntu_1804_bionic_arm64_raw = false
+  enable_ubuntu_1604_xenial_arm64_qcow2 = false
+  enable_ubuntu_1604_xenial_arm64_raw = false
+  enable_ubuntu_1404_trusty_arm64_qcow2 = false
+  enable_ubuntu_1404_trusty_arm64_raw = false
 }
 module "vyos" {
   source = "./vyos"

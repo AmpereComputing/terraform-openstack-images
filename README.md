@@ -3,22 +3,33 @@
 # terraform-openstack-x86_64-images
 Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 
-| Cloud Image | versions | QCOW2 | RAW |
-| ------------------- | --- | ----- | --- |
-| Archlinux | LATEST | X | X |
-| CentOS | 6.1901, 7.1901 | X | X |
-| CirrOS | 0.4.0 | X | X |
-| CoreOS | Stable, Alpha, Beta | X | X |
-| Debian | 9, 10 | X | X |
-| Fedora | Server 29, 30 Fedora-Atomic 29| X | X |
-| Fedora-Atomic | 29 | X | X |
-| Flatcar Linux | Stable, Alpha, Beta | X | X |
-| FreeBSD | 12.0 Release | X | X |
-| Kali-Linux | Rolling Latest| | X | X |
-| OpenSuSE | Leap 15.0 15.1 |X | X |
-| RancherOS | 5.4 | X | X |
-| Ubuntu |Trusty, Xenial, Bionic | X | X |
-| Vyos | Rolling | X | X |
+| Cloud Image | versions | x86_64 | aarch64 | QCOW2 | RAW |
+| ------------------- | --- | ---| ---| ----- | --- |
+| Archlinux | LATEST | X | | X | X |
+| CentOS | 6.1901 | X | | X | X |
+| CentOS | 7.1901 | X | | X  | X |
+| CentOS | 7 | | X  | X  | X |
+| CirrOS | 0.4.0 | X | | X | X |
+| CoreOS | Stable | X | | X | X |
+| CoreOS | Alpha | X | | X | X |
+| CoreOS | Beta | X | | X | X |
+| Debian | 9 | X | X | X | X |
+| Debian | 10 | X | X | X | X |
+| Fedora | 29 | X | X | X | X |
+| Fedora | 30 | X | X | X | X |
+| Fedora-Atomic | 29 | | | X | X | 
+| Flatcar Linux | Stable | X | | X | X |
+| Flatcar Linux | Alpha | X | | X | X |
+| Flatcar Linux | Beta | X | | X | X |
+| FreeBSD | 12.0 Release | X | | X | X |
+| Kali-Linux | Rolling Latest| X | | X | X |
+| OpenSuSE | Leap 15.0 |X | | X | X |
+| OpenSuSE | Leap 15.1 |X | X | X | X |
+| RancherOS | 5.4 | X | | X | X |
+| Ubuntu | Trusty | X | X | X | X |
+| Ubuntu | Xenial | X | X | X | X |
+| Ubuntu | Bionic | X | X | X | X |
+| Vyos | Rolling | X | | X | X |
 
 ## Assets
 
