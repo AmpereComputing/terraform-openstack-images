@@ -39,15 +39,16 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 
 ## Usage
 Download the source
-
 ```
 git clone https://github.com/AmpereComputing/terraform-openstack-images
 cd terraform-openstack-images
 ```
-
 Modify the setting for the images you want loaded to "true" in the main.tf
+Source your OpenStack credentials.
+```
+ . /etc/kolla/admin-openrc.sh
+```
 Execute terraform.
-
 ```
 terraform init
 terraform plan
