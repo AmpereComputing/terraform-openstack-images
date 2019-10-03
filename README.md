@@ -39,6 +39,9 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 
 ## Assets
 
+* [main.tf](main.tf) 
+* [variables.tf](variables.tf) 
+
 ### Archlinux
 
 * [archlinux/archlinux_image.sh](archlinux/archlinux_image.sh)
