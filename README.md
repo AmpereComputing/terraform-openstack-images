@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenStack.
+Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenStack.
 
 
 ## Images 
@@ -37,6 +37,39 @@ Terraform module for managing QCOW2 and RAW x86_64 and AARCH64 images for OpenSt
 | Ubuntu | Xenial | X | X | X | X |
 | Ubuntu | Bionic | X | X | X | X |
 | Vyos | Rolling | X | | X | X |
+
+## Usage
+Download the source
+```
+git clone https://github.com/AmpereComputing/terraform-openstack-images
+cd terraform-openstack-images
+```
+Modify the setting for the images you want loaded to "true" in the main.tf
+For example to enable the CentOS 7 AARCH64 image find the following line in the main.tf
+
+```
+enable_centos_7_aarch64_qcow2 = false
+```
+
+Change the line from false to true like in the following example.
+
+```
+enable_centos_7_aarch64_qcow2 = true
+```
+
+Remember to source your OpenStack credentials.
+
+```
+ . /etc/kolla/admin-openrc.sh
+```
+
+Execute terraform.
+
+```
+terraform init
+terraform plan
+terraform apply -auto-approve
+```
 
 ## Assets
 
