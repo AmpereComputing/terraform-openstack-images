@@ -1,6 +1,23 @@
 # terraform-openstack-x86_64-images
 Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 
+| Cloud Image | QCOW2 | RAW |
+| ------------------- | ----- | --- |
+| Archlinux | X | X |
+| CentOS | X | X |
+| CirrOS | X | X |
+| CoreOS | X | X |
+| Debian | X | X |
+| Fedora | X | X |
+| Flatcar Linux | X | X |
+| FreeBSD | X | X |
+| Kali-Linux | X | X |
+| OpenSuSE | X | X |
+| RancherOS | X | X |
+| Ubuntu | X | X |
+| Vyos | X | X |
+
+
 ## Archlinux
 
 * [archlinux/archlinux_image.sh](archlinux/archlinux_image.sh)
@@ -67,21 +84,5 @@ Terraform module for managing QCOW2 and RAW OpenStack Images for x86_64
 
 * [vyos/main.tf](vyos/main.tf)
 * [Vyos.io](https://vyos.io)
-
-| Linux Distribuition | QCOW2 | RAW |
-| ------------------- | ----- | --- |
-| Archlinux | X | X |
-| CentOS | X | X |
-| CirrOS | X | X |
-| CoreOS | X | X |
-| Debian | X | X |
-| Fedora | X | X |
-| Flatcar Linux | X | X |
-| FreeBSD | X | X |
-| Kali-Linux | X | X |
-| OpenSuSE | X | X |
-| RancherOS | X | X |
-| Ubuntu | X | X |
-| Vyos | X | X |
 
 
