@@ -128,7 +128,7 @@ terraform apply -auto-approve
 
 ### FreeBSD
 
-* [freebsd/freebsd_image.sh](freebsd_image.sh)
+* [freebsd/freebsd_image.sh](freebsd/freebsd_image.sh)
 * [freebsd/main.tf](freebsd/main.tf)
 * [freebsd/variables.tf](freebsd/variables.tf)
 
