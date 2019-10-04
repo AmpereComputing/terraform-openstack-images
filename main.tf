@@ -43,9 +43,9 @@ module "debian" {
   enable_debian_10_arm64_raw = false
 }
 module "devuan" {
-  source = "./debian"
+  source = "./devuan"
+  enable_devuan_acsii_200_amd64_raw = false
   enable_devuan_ascii_200_amd64_qcow2 = false
-  enable_devuan_ascii_200_amd64_raw = false
 }
 module "fedora" {
   source = "./fedora"
