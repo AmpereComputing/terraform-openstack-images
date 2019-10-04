@@ -25,7 +25,7 @@ then
 !! ERROR: No RANCHEROS_RELEASE argument supplied to script. Please  !!
 !! supply the release number wanted ass an option to the script.    !!
 !!                                                                  !!
-!! USAGE: ./ros_image.sh 1.5.1                                      !!
+!! USAGE: ./ros_image.sh 1.5.4                                      !!
 !! ---------------------------------------------------------------- !!"
   cd $PROJECT_DIR
   exit

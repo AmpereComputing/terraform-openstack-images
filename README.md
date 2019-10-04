@@ -32,7 +32,7 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Kali-Linux | Rolling Latest| X | | X | X |
 | OpenSuSE | Leap 15.0 |X | | X | X |
 | OpenSuSE | Leap 15.1 |X | X | X | X |
-| RancherOS | 5.4 | X | | X | X |
+| RancherOS | 1.5.4 | X | | X | X |
 | Ubuntu | Trusty | X | X | X | X |
 | Ubuntu | Xenial | X | X | X | X |
 | Ubuntu | Bionic | X | X | X | X |
