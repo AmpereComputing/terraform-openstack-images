@@ -74,6 +74,8 @@ module "freebsd" {
   source = "./freebsd"
   enable_freebsd_120_release_amd64_qcow2 = false
   enable_freebsd_120_release_amd64_raw = false
+  enable_freebsd_120_release_aarch64_qcow2 = false
+  enable_freebsd_120_release_aarch64_raw = false
 }
 module "kali-linux" {
   source = "./kali-linux"
