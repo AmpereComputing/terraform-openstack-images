@@ -184,4 +184,16 @@ resource "openstack_images_image_v2" "fedora_server_30_aarch64_qcow2" {
     os_distro = "fedora"
   }
 }
+resource "openstack_images_image_v2" "fedora_atomic_29_aarch64_qcow2" {
+  count = var.enable_fedora_atomic_29_aarch64_qcow2 ? 1:0
+  name   = "fedora-atomic-29-aarch64-qcow2"
+  image_source_url = "https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-29-updates-20191001.0/AtomicHost/aarch64/images/Fedora-AtomicHost-29-20191001.0.aarch64.qcow2"
+  container_format = "bare"
+  disk_format = "qcow2"
+  properties = {
+    key = "value"
+    os_distro = "fedora"
+  }
+}
+
 

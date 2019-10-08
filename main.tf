@@ -49,6 +49,7 @@ module "devuan" {
 }
 module "fedora" {
   source = "./fedora"
+  enable_fedora_atomic_29_aarch64_qcow2 = true
   enable_fedora_atomic_29_x86_64_qcow2 = false
   enable_fedora_atomic_29_x86_64_raw = false
   enable_fedora_cloud_base_29_x86_64_qcow2 = false
