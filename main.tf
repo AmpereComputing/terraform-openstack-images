@@ -9,8 +9,8 @@ module "centos" {
   enable_centos_7_1901_x86_64_raw = false
   enable_centos_6_1901_x86_64_qcow2 = false
   enable_centos_6_1901_x86_64_raw = false
-  enable_centos_7_aarch64_qcow2 = true
-  enable_centos_7_aarch64_raw = false
+  enable_centos_7_1708_aarch64_qcow2 = true
+  enable_centos_7_1708_aarch64_raw = false
 }
 module "centos-atomic" {
   source = "./centos-atomic"
@@ -37,9 +37,9 @@ module "debian" {
   enable_debian_9_amd64_raw = false
   enable_debian_10_amd64_qcow2 = false
   enable_debian_10_amd64_raw = false
-  enable_debian_9_arm64_qcow2 = false
+  enable_debian_9_arm64_qcow2 = true
   enable_debian_9_arm64_raw = false
-  enable_debian_10_arm64_qcow2 = false
+  enable_debian_10_arm64_qcow2 = true
   enable_debian_10_arm64_raw = false
 }
 module "devuan" {
@@ -89,13 +89,18 @@ module "opensuse" {
   enable_opensuse_leap_150_x86_64_raw = false
   enable_opensuse_leap_151_x86_64_qcow2 = false
   enable_opensuse_leap_151_x86_64_raw = false
-  enable_opensuse_151_aarch64_qcow2 = true
+  enable_opensuse_151_aarch64_qcow2 = false
   enable_opensuse_151_aarch64_raw = false
 }
 module "rancheros" {
   source = "./rancheros"
   enable_rancheros_openstack_amd64_qcow2 = false
   enable_rancheros_openstack_amd64_raw = false
+}
+module "k3os" {
+  source = "./k3os"
+  enable_k3os_arm64_raw = true
+  enable_k3os_amd64_raw = false
 }
 module "ubuntu" {
   source = "./ubuntu"

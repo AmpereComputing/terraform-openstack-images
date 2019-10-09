@@ -37,8 +37,8 @@ then
   echo
 fi
 echo -n "Downloading and extracting inline:"
-wget -c http://cloud.centos.org/altarch/$CENTOS_RELEASE/images/aarch64/CentOS-$CENTOS_RELEASE-aarch64-GenericCloud.qcow2.xz -O CentOS-$CENTOS_RELEASE-aarch64-GenericCloud.qcow2.xz
-unxz -v CentOS-$CENTOS_RELEASE-aarch64-GenericCloud.qcow2.xz
-qemu-img convert -f qcow2 -O raw CentOS-$CENTOS_RELEASE-aarch64-GenericCloud.qcow2 CentOS-$CENTOS_RELEASE-aarch64-GenericCloud.raw
+wget -c http://cloud.centos.org/altarch/$CENTOS_RELEASE/images/aarch64/CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-1708.qcow2.xz -O CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-1708.qcow2.xz
+unxz -v CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-1708.qcow2.xz
+qemu-img convert -f qcow2 -O raw CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-1708.qcow2 CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-1708.raw
 cd $PROJECT_DIR
 

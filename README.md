@@ -29,6 +29,7 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Flatcar Linux | Alpha | X | | X | X |
 | Flatcar Linux | Beta | X | | X | X |
 | FreeBSD | 12.0 Release | X | X | X | X |
+| K3OS | 0.3.0 | X | X | | X |
 | Kali-Linux | Rolling Latest| X | | X | X |
 | OpenSuSE | Leap 15.0 |X | | X | X |
 | OpenSuSE | Leap 15.1 |X | X | X | X |
@@ -131,6 +132,13 @@ terraform apply -auto-approve
 * [freebsd/freebsd_image.sh](freebsd/freebsd_image.sh)
 * [freebsd/main.tf](freebsd/main.tf)
 * [freebsd/variables.tf](freebsd/variables.tf)
+
+### K3OS
+
+* [k3os/k3os_image.sh](k3os/k3os_image.sh)
+* [k3os/main.tf](k3os/main.tf)
+* [k3os/variables.tf](k3os/variables.tf)
+
 
 ### Kali-Linux
 
