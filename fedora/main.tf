@@ -20,7 +20,7 @@ resource "openstack_images_image_v2" "fedora_atomic_29_x86_64_raw" {
 
   properties = {
     key = "value"
-    os_distro = "fedora"
+    os_distro = "fedora-atomic"
   }
 }
 
@@ -37,7 +37,7 @@ resource "openstack_images_image_v2" "fedora_atomic_29_x86_64_qcow2" {
 
   properties = {
     key = "value"
-    os_distro = "fedora"
+    os_distro = "fedora-atomic"
   }
 }
 
@@ -192,7 +192,7 @@ resource "openstack_images_image_v2" "fedora_atomic_29_aarch64_qcow2" {
   disk_format = "qcow2"
   properties = {
     key = "value"
-    os_distro = "fedora"
+    os_distro = "fedora-atomic"
   }
 }
 
