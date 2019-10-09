@@ -9,7 +9,7 @@ module "centos" {
   enable_centos_7_1901_x86_64_raw = false
   enable_centos_6_1901_x86_64_qcow2 = false
   enable_centos_6_1901_x86_64_raw = false
-  enable_centos_7_1708_aarch64_qcow2 = true
+  enable_centos_7_1708_aarch64_qcow2 = false
   enable_centos_7_1708_aarch64_raw = false
 }
 module "centos-atomic" {
@@ -99,7 +99,9 @@ module "rancheros" {
 }
 module "k3os" {
   source = "./k3os"
-  enable_k3os_arm64_raw = true
+  enable_k3os_arm64_qcow2 = true
+  enable_k3os_arm64_raw = false
+  enable_k3os_amd64_qcow2 = false
   enable_k3os_amd64_raw = false
 }
 module "ubuntu" {
