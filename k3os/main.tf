@@ -19,6 +19,7 @@ resource "openstack_images_image_v2" "k3os_arm64_qcow2" {
   properties = {
     key = "value"
     os_distro = "k3os"
+    kernel_args = "k3os.mode=live k3os.debug=true k3os.datasources=openstack"
   }
 }
 
@@ -30,6 +31,7 @@ resource "openstack_images_image_v2" "k3os_arm64" {
   disk_format = "raw"
   properties = {
     os_distro = "k3os"
+    kernel_args = "k3os.mode=live k3os.debug=true k3os.datasources=openstack"
   }
 }
 resource "null_resource" "download-extract-image-k3os-amd64" {
@@ -52,6 +54,7 @@ resource "openstack_images_image_v2" "k3os_amd64_qcow2" {
   properties = {
     key = "value"
     os_distro = "k3os"
+    kernel_args = "k3os.mode=live k3os.debug=true k3os.datasources=openstack"
   }
 }
 
@@ -63,5 +66,6 @@ resource "openstack_images_image_v2" "k3os_amd64" {
   disk_format = "raw"
   properties = {
     os_distro = "k3os"
+    kernel_args = "k3os.mode=live k3os.debug=true k3os.datasources=openstack"
   }
 }
