@@ -49,9 +49,12 @@ variable "enable_centos_7_aarch64_qcow2" {
 }
 
 variable "enable_centos_8_aarch64_raw" {
-  description = "Enable  8.1.1911-20200113.3 raw"                                                                         default     = 0
+  description = "Enable  8.1.1911-20200113.3 raw"
+  default     = 0
 }
-variable "enable_centos_8_aarch64_qcow2" {                                                                                description = "Enable  8.1.1911-20200113.3 qcow2"                                                                       default     = 0
+variable "enable_centos_8_aarch64_qcow2" {
+  description = "Enable  8.1.1911-20200113.3 qcow2"
+  default     = 0
 }
 
 variable "enable_cirros_040_x86_64_raw" {
