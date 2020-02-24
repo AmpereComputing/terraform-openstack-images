@@ -9,11 +9,11 @@ resource "null_resource" "download-extract-image-archlinux-latest" {
 resource "openstack_images_image_v2" "archlinux_openstack_LATEST_image_bootstrap_x86_64_raw" {
   count = var.enable_archlinux_latest_x86_64_raw ? 1:0
   name   = "archlinux-openstack-LATEST-image-bootstrap-x86_64-raw"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/arch-openstack-LATEST-image-bootstrap.raw")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/arch-openstack-LATEST-image-bootstrap.raw")
   container_format = "bare"
   disk_format = "raw"
   depends_on = [
-    "null_resource.download-extract-image-archlinux-latest",
+    null_resource.download-extract-image-archlinux-latest,
   ]
 
   properties = {

@@ -10,12 +10,12 @@ resource "null_resource" "download-extract-image-fedora-atomic" {
 resource "openstack_images_image_v2" "fedora_atomic_29_x86_64_raw" {
   count = var.enable_fedora_atomic_29_x86_64_raw ? 1:0
   name   = "fedora-atomichost-29-x86_64-raw"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-AtomicHost-29.raw")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-AtomicHost-29.raw")
   container_format = "bare"
   disk_format = "raw"
   visibility = "public"
   depends_on = [
-    "null_resource.download-extract-image-fedora-atomic",
+    null_resource.download-extract-image-fedora-atomic,
   ]
 
   properties = {
@@ -27,12 +27,12 @@ resource "openstack_images_image_v2" "fedora_atomic_29_x86_64_raw" {
 resource "openstack_images_image_v2" "fedora_atomic_29_x86_64_qcow2" {
   count = var.enable_fedora_atomic_29_x86_64_qcow2 ? 1:0
   name   = "fedora-atomichost-29-x86_64-qcow2"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-AtomicHost-29.qcow2")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-AtomicHost-29.qcow2")
   container_format = "bare"
   disk_format = "raw"
   visibility = "public"
   depends_on = [
-    "null_resource.download-extract-image-fedora-atomic",
+    null_resource.download-extract-image-fedora-atomic,
   ]
 
   properties = {
@@ -50,12 +50,12 @@ resource "null_resource" "download-extract-image-fedora-29-cloud-base-x86_64" {
 resource "openstack_images_image_v2" "fedora-29-cloud-base-x86_64-qcow2" {
   count = var.enable_fedora_cloud_base_29_x86_64_qcow2 ? 1:0
   name   = "fedora-cloud-base-29-x86_64-qcow2"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-29-1.2.x86_64.qcow2")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-29-1.2.x86_64.qcow2")
   container_format = "bare"
   disk_format = "qcow2"
   visibility = "public"
   depends_on = [
-    "null_resource.download-extract-image-fedora-29-cloud-base-x86_64",
+    null_resource.download-extract-image-fedora-29-cloud-base-x86_64,
   ]
 
   properties = {
@@ -67,12 +67,12 @@ resource "openstack_images_image_v2" "fedora-29-cloud-base-x86_64-qcow2" {
 resource "openstack_images_image_v2" "fedora-29-cloud-base-x86_64-raw" {
   count = var.enable_fedora_cloud_base_29_x86_64_raw ? 1:0
   name   = "fedora-cloud-base-29-x86_64-raw"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-29-1.2.x86_64.raw")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-29-1.2.x86_64.raw")
   container_format = "bare"
   disk_format = "raw"
   visibility = "public"
   depends_on = [
-    "null_resource.download-extract-image-fedora-29-cloud-base-x86_64",
+    null_resource.download-extract-image-fedora-29-cloud-base-x86_64,
   ]
 
   properties = {
@@ -90,12 +90,12 @@ resource "null_resource" "download-extract-image-fedora-30-cloud-base-x86_64" {
 resource "openstack_images_image_v2" "fedora-30-cloud-base-x86_64-qcow2" {
   count = var.enable_fedora_cloud_base_30_x86_64_qcow2 ? 1:0
   name   = "fedora-cloud-base-30-x86_64-qcow2"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-30-1.2.x86_64.qcow2")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-30-1.2.x86_64.qcow2")
   container_format = "bare"
   disk_format = "qcow2"
   visibility = "public"
   depends_on = [
-    "null_resource.download-extract-image-fedora-30-cloud-base-x86_64",
+    null_resource.download-extract-image-fedora-30-cloud-base-x86_64,
   ]
 
   properties = {
@@ -107,12 +107,12 @@ resource "openstack_images_image_v2" "fedora-30-cloud-base-x86_64-qcow2" {
 resource "openstack_images_image_v2" "fedora-30-cloud-base-x86_64-raw" {
   count = var.enable_fedora_cloud_base_30_x86_64_raw ? 1:0
   name   = "fedora-cloud-base-30-x86_64-raw"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-30-1.2.x86_64.raw")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Cloud-Base-30-1.2.x86_64.raw")
   container_format = "bare"
   disk_format = "raw"
   visibility = "public"
   depends_on = [
-    "null_resource.download-extract-image-fedora-30-cloud-base-x86_64",
+    null_resource.download-extract-image-fedora-30-cloud-base-x86_64,
   ]
 
   properties = {
@@ -133,11 +133,11 @@ resource "null_resource" "download-extract-image-fedora-server" {
 resource "openstack_images_image_v2" "fedora_server_29_aarch64_raw" {
   count = var.enable_fedora_server_29_aarch64_raw ? 1:0
   name   = "fedora-server-29-aarch64-raw"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-Server-29-1.2.aarch64.raw")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Server-29-1.2.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
   depends_on = [
-    "null_resource.download-extract-image-fedora-server",
+    null_resource.download-extract-image-fedora-server,
   ]
 
   properties = {
@@ -160,11 +160,11 @@ resource "openstack_images_image_v2" "fedora_server_29_aarch64_qcow2" {
 resource "openstack_images_image_v2" "fedora_server_30_aarch64_raw" {
   count = var.enable_fedora_server_30_aarch64_raw ? 1:0
   name   = "fedora-server-30-aarch64-raw"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/Fedora-Server-30-1.2.aarch64.raw")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Server-30-1.2.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
   depends_on = [
-    "null_resource.download-extract-image-fedora-server",
+    null_resource.download-extract-image-fedora-server,
   ]
 
   properties = {
