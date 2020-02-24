@@ -210,13 +210,14 @@ variable "enable_flatcar_current_beta_amd64_raw" {
 
 
 variable "enable_flatcar_current_alpha_arm64_qcow2" {
-  description = "Enable Flatcar Linux Current Alpha Arm64 QCOW2 Image"                                                                                                                                                                  default     = 0
+  description = "Enable Flatcar Linux Current Alpha Arm64 QCOW2 Image"
+  default     = 0
 }
 
 variable "enable_flatcar_current_alpha_arm64_raw" {
-  description = "Enable Flatcar Linux Current Alpha Arm64 Raw Image"                                                                                                                                                                    default     = 0
+  description = "Enable Flatcar Linux Current Alpha Arm64 Raw Image" 
+  default     = 0
 }
-
 
 variable "enable_freebsd_120_release_amd64_qcow2" {
   description = "Enable FreeBSD 12.0 Release AMD64 QCOW2 Image"
