@@ -109,3 +109,4 @@ resource "openstack_images_image_v2" "flatcar_current_beta_amd64_raw" {
     os_distro = "coreos"
   }
 }
+# https://alpha.release.flatcar-linux.net/arm64-usr/current/flatcar_production_openstack_image.img.bz2
