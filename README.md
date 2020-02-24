@@ -13,8 +13,9 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | ------------------- | --- | ---| ---| ----- | --- |
 | Archlinux | LATEST | X | | X | X |
 | CentOS | 6.1901 | X | | X | X |
-| CentOS | 7.1901 | X | | X  | X |
-| CentOS | 7 | | X  | X  | X |
+| CentOS | 7.1901 | X | | X | X |
+| CentOS | 7 | | X | X | X |
+| CentOS | 8 | X | X | X | X |
 | CirrOS | 0.4.0 | X | | X | X |
 | CoreOS | Stable | X | | X | X |
 | CoreOS | Alpha | X | | X | X |
@@ -26,7 +27,7 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Fedora | 30 | X | X | X | X |
 | Fedora-Atomic | 29 | X | | X | X | 
 | Flatcar Linux | Stable | X | | X | X |
-| Flatcar Linux | Alpha | X | | X | X |
+| Flatcar Linux | Alpha | X | X | X | X |
 | Flatcar Linux | Beta | X | | X | X |
 | FreeBSD | 12.0 Release | X | X | X | X |
 | K3OS | 0.3.0 | X | X | | X |
