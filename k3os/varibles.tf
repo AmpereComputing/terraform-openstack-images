@@ -2,7 +2,7 @@
 variable "k3os_version" {
   description = "The version of K3os"
   type = string
-  default = "0.3.0"
+  default = "0.9.0"
 }
 variable "enable_k3os_arm64_qcow2" {
   description = "Enable K3OS ARM64 QCOW2 Images"

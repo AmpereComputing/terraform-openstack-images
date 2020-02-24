@@ -77,6 +77,8 @@ module "flatcar-linux" {
   enable_flatcar_current_alpha_amd64_raw    = false
   enable_flatcar_current_beta_amd64_qcow2   = false
   enable_flatcar_current_beta_amd64_raw     = false
+  enable_flatcar_current_alpha_arm64_qcow2  = true
+  enable_flatcar_current_alpha_arm64_raw    = false
 }
 
 module "freebsd" {
@@ -111,8 +113,8 @@ module "rancheros" {
 
 module "k3os" {
   source                  = "./k3os"
-  enable_k3os_arm64_qcow2 = true
-  enable_k3os_arm64_raw   = true
+  enable_k3os_arm64_qcow2 = false
+  enable_k3os_arm64_raw   = false
   enable_k3os_amd64_qcow2 = false
   enable_k3os_amd64_raw   = false
 }
