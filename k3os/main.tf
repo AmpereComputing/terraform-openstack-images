@@ -9,11 +9,11 @@ resource "null_resource" "download-extract-image-k3os-arm64" {
 resource "openstack_images_image_v2" "k3os_arm64_qcow2" {
   count = var.enable_k3os_arm64_qcow2 ? 1:0
   name   = "k3os-${ var.k3os_version }-arm64-qcow2"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/k3os-${ var.k3os_version }-arm64.qcow2")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/k3os-${ var.k3os_version }-arm64.qcow2")
   container_format = "bare"
   disk_format = "qcow2"
   depends_on = [
-    "null_resource.download-extract-image-k3os-arm64",
+    null_resource.download-extract-image-k3os-arm64,
   ]
 
   properties = {
@@ -44,11 +44,11 @@ resource "null_resource" "download-extract-image-k3os-amd64" {
 resource "openstack_images_image_v2" "k3os_amd64_qcow2" {
   count = var.enable_k3os_amd64_qcow2 ? 1:0
   name   = "k3os-${ var.k3os_version }-amd64-qcow2"
-  local_file_path = "${pathexpand("~/.terraform/image_cache/k3os-${ var.k3os_version }-amd64.qcow")}"
+  local_file_path = pathexpand("~/.terraform/image_cache/k3os-${ var.k3os_version }-amd64.qcow")
   container_format = "bare"
   disk_format = "qcow2"
   depends_on = [
-    "null_resource.download-extract-image-k3os-amd64",
+    null_resource.download-extract-image-k3os-amd64,
   ]
 
   properties = {

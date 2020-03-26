@@ -14,7 +14,7 @@ resource "openstack_images_image_v2" "cirros-040-x86_64-raw" {
   container_format = "bare"
   disk_format = "raw"
   depends_on = [
-    "null_resource.download-extract-image-cirros-040-x86_64",
+    null_resource.download-extract-image-cirros-040-x86_64,
   ]
   properties = {
     os_distro = "cirros"
