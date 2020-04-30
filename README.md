@@ -25,6 +25,8 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Devuan | ASCII 2.0.0 | X | | X | X |
 | Fedora | 29 | X | X | X | X |
 | Fedora | 30 | X | X | X | X |
+| Fedora | 31 | X | X | X | X |
+| Fedora | 32 | X | X | X | X |
 | Fedora-Atomic | 29 | X | | X | X | 
 | Flatcar Linux | Stable | X | | X | X |
 | Flatcar Linux | Alpha | X | X | X | X |
@@ -38,6 +40,7 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Ubuntu | Trusty | X | X | X | X |
 | Ubuntu | Xenial | X | X | X | X |
 | Ubuntu | Bionic | X | X | X | X |
+| Ubuntu | Focal | X | X | X | X |
 | Vyos | Rolling | X | | X | X |
 
 ## Usage
