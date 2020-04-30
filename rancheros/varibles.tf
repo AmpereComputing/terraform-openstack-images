@@ -8,7 +8,7 @@ variable "enable_rancheros_openstack_amd64_qcow2" {
   default     = 0
 }
 variable "ros_version" {
-  type        = "string"
+  type        = string
   description = "RancherOS Version"
   default     = "1.5.5"
 }

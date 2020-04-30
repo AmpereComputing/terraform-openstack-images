@@ -12,6 +12,7 @@ resource "openstack_images_image_v2" "ubuntu-2004-focal-raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/focal-server-cloudimg-amd64-disk1.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-focal-amd64,
   ]
@@ -33,6 +34,7 @@ resource "openstack_images_image_v2" "ubuntu-1804-bionic-raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/bionic-server-cloudimg-amd64-disk1.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-bionic-amd64,
   ]
@@ -53,6 +55,7 @@ resource "openstack_images_image_v2" "ubuntu-1604-xenial-amd64-raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/xenial-server-cloudimg-amd64-disk1.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-xenial-amd64,
   ]
@@ -73,6 +76,7 @@ resource "openstack_images_image_v2" "ubuntu-1404-trusty-amd64-raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/trusty-server-cloudimg-amd64-disk1.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-trusty-amd64,
   ]
@@ -88,6 +92,7 @@ resource "openstack_images_image_v2" "ubuntu-2004-focal-amd64-qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-amd64-disk.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -99,6 +104,7 @@ resource "openstack_images_image_v2" "ubuntu-1804-bionic-amd64-qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/xenial/current/xenial-server-cloudimg-amd64-disk1.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -110,6 +116,7 @@ resource "openstack_images_image_v2" "ubuntu-1604-xenial-amd64-qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/xenial/current/xenial-server-cloudimg-amd64-disk1.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -120,6 +127,7 @@ resource "openstack_images_image_v2" "ubuntu-1404-trusty-amd64-qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/trusty/current/trusty-server-cloudimg-amd64-disk1.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -137,6 +145,7 @@ resource "openstack_images_image_v2" "ubuntu_2004_focal_arm64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/focal-server-cloudimg-arm64.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-focal-arm64,
   ]
@@ -150,6 +159,7 @@ resource "openstack_images_image_v2" "ubuntu_2004_focal_arm64_qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-arm64.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -167,6 +177,7 @@ resource "openstack_images_image_v2" "ubuntu_1804_bionic_arm64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/bionic-server-cloudimg-arm64.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-bionic-arm64,
   ]
@@ -180,6 +191,7 @@ resource "openstack_images_image_v2" "ubuntu_1804_bionic_arm64_qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/bionic/current/bionic-server-cloudimg-arm64.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -197,6 +209,7 @@ resource "openstack_images_image_v2" "ubuntu_1604_xenial_arm64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/xenial-server-cloudimg-arm64-disk1.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-xenial-arm64,
   ]
@@ -211,6 +224,7 @@ resource "openstack_images_image_v2" "ubuntu_1604_xenial_arm64_qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/xenial/current/xenial-server-cloudimg-arm64-disk1.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }
@@ -228,6 +242,7 @@ resource "openstack_images_image_v2" "ubuntu_1404_trusty_arm64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/trusty-server-cloudimg-arm64-disk1.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-trusty-arm64,
   ]
@@ -242,6 +257,7 @@ resource "openstack_images_image_v2" "ubuntu_1404_trusty_arm64_qcow2" {
   image_source_url = "https://cloud-images.ubuntu.com/daily/server/trusty/current/trusty-server-cloudimg-arm64-disk1.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "ubuntu"
   }

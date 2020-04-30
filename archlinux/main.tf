@@ -12,6 +12,7 @@ resource "openstack_images_image_v2" "archlinux_openstack_LATEST_image_bootstrap
   local_file_path = pathexpand("~/.terraform/image_cache/arch-openstack-LATEST-image-bootstrap.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-archlinux-latest,
   ]
@@ -28,6 +29,7 @@ resource "openstack_images_image_v2" "archlinux_openstack_LATEST_image_bootstrap
   image_source_url = "https://linuximages.de/openstack/arch/arch-openstack-LATEST-image-bootstrap.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "archlinux"

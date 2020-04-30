@@ -12,6 +12,7 @@ resource "openstack_images_image_v2" "centos_atomic_host_genericcloud_x86_64_qco
   local_file_path = pathexpand("~/.terraform/image_cache/CentOS-Atomic-Host-GenericCloud.qcow2")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-centos-atomic-x86_64,
   ]
@@ -27,6 +28,7 @@ resource "openstack_images_image_v2" "centos_atomic_host_genericcloud_x86_64_raw
   local_file_path = pathexpand("~/.terraform/image_cache/CentOS-Atomic-Host-GenericCloud.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-centos-atomic-x86_64,
   ]

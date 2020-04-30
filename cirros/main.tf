@@ -13,6 +13,7 @@ resource "openstack_images_image_v2" "cirros-040-x86_64-raw" {
   image_source_url = "https://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img"
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-cirros-040-x86_64,
   ]
@@ -26,6 +27,7 @@ resource "openstack_images_image_v2" "cirros-040-x86_64-qcow2" {
   image_source_url = "https://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     os_distro = "cirros"
   }

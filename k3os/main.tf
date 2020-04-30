@@ -12,6 +12,7 @@ resource "openstack_images_image_v2" "k3os_arm64_qcow2" {
   local_file_path = pathexpand("~/.terraform/image_cache/k3os-${ var.k3os_version }-arm64.qcow2")
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-k3os-arm64,
   ]
@@ -29,6 +30,7 @@ resource "openstack_images_image_v2" "k3os_arm64" {
   image_source_url = "https://github.com/rancher/k3os/releases/download/v${ var.k3os_version }/k3os-arm64.iso"
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   properties = {
     os_distro = "k3os"
     kernel_args = "k3os.mode=live k3os.debug=true k3os.datasources=openstack"
@@ -47,6 +49,7 @@ resource "openstack_images_image_v2" "k3os_amd64_qcow2" {
   local_file_path = pathexpand("~/.terraform/image_cache/k3os-${ var.k3os_version }-amd64.qcow")
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-k3os-amd64,
   ]
@@ -64,6 +67,7 @@ resource "openstack_images_image_v2" "k3os_amd64" {
   image_source_url = "https://github.com/rancher/k3os/releases/download/v${ var.k3os_version }/k3os-amd64.iso"
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   properties = {
     os_distro = "k3os"
     kernel_args = "k3os.mode=live k3os.debug=true k3os.datasources=openstack"

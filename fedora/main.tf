@@ -213,6 +213,7 @@ resource "openstack_images_image_v2" "fedora_server_29_aarch64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Server-29-1.2.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-fedora-server,
   ]
@@ -228,6 +229,7 @@ resource "openstack_images_image_v2" "fedora_server_29_aarch64_qcow2" {
   image_source_url = "https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/29/Cloud/aarch64/images/Fedora-Cloud-Base-29-1.2.aarch64.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "fedora"
@@ -240,6 +242,7 @@ resource "openstack_images_image_v2" "fedora_server_30_aarch64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Server-30-1.2.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-fedora-server,
   ]
@@ -256,6 +259,7 @@ resource "openstack_images_image_v2" "fedora_server_30_aarch64_qcow2" {
   image_source_url = "https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/30/Cloud/aarch64/images/Fedora-Cloud-Base-30-1.2.aarch64.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "fedora"
@@ -268,6 +272,7 @@ resource "openstack_images_image_v2" "fedora_server_31_aarch64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Server-31-1.9.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-fedora-server,
   ]
@@ -284,6 +289,7 @@ resource "openstack_images_image_v2" "fedora_server_31_aarch64_qcow2" {
   image_source_url = "https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/31/Cloud/aarch64/images/Fedora-Cloud-Base-31-1.9.aarch64.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "fedora"
@@ -295,6 +301,7 @@ resource "openstack_images_image_v2" "fedora_server_32_aarch64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/Fedora-Server-32-1.6.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-fedora-server,
   ]
@@ -311,6 +318,7 @@ resource "openstack_images_image_v2" "fedora_server_32_aarch64_qcow2" {
   image_source_url = "https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/32/Cloud/aarch64/images/Fedora-Cloud-Base-32-1.6.aarch64.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "fedora"
@@ -322,10 +330,9 @@ resource "openstack_images_image_v2" "fedora_atomic_29_aarch64_qcow2" {
   image_source_url = "https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-29-updates-20191001.0/AtomicHost/aarch64/images/Fedora-AtomicHost-29-20191001.0.aarch64.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "fedora-atomic"
   }
 }
-
-

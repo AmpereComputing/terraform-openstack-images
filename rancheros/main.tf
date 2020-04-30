@@ -12,6 +12,7 @@ resource "openstack_images_image_v2" "rancheros_openstack_amd64_raw" {
   local_file_path = pathexpand("~/.terraform/image_cache/rancheros-${var.ros_version}-openstack.raw")
   container_format = "bare"
   disk_format = "raw"
+  visibility = "public"
   depends_on = [
     null_resource.download-extract-image-rancheros,
   ]
@@ -28,6 +29,7 @@ resource "openstack_images_image_v2" "rancheros_openstack_amd64_qcow2" {
   image_source_url = "https://github.com/rancher/os/releases/download/v${var.ros_version}/rancheros-openstack.img"
   container_format = "bare"
   disk_format = "qcow2"
+  visibility = "public"
   properties = {
     key = "value"
     os_distro = "rancheros"

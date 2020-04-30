@@ -117,7 +117,7 @@ module "opensuse" {
 
 module "rancheros" {
   source                                 = "./rancheros"
-  enable_rancheros_openstack_amd64_qcow2 = false
+  enable_rancheros_openstack_amd64_qcow2 = true
   enable_rancheros_openstack_amd64_raw   = false
 }
 
