@@ -6,12 +6,14 @@ module "archlinux" {
 
 module "centos" {
   source                             = "./centos"
-  enable_centos_7_1901_x86_64_qcow2  = false
-  enable_centos_7_1901_x86_64_raw    = false
   enable_centos_6_1901_x86_64_qcow2  = false
   enable_centos_6_1901_x86_64_raw    = false
-  enable_centos_7_1708_aarch64_qcow2 = true
-  enable_centos_7_1708_aarch64_raw   = false
+  enable_centos_7_x86_64_qcow2       = false
+  enable_centos_7_x86_64_raw         = false
+  enable_centos_8_x86_64_qcow2       = false
+  enable_centos_8_x86_64_raw         = false
+  enable_centos_7_aarch64_qcow2      = true
+  enable_centos_7_aarch64_raw        = false
   enable_centos_8_aarch64_qcow2      = true
   enable_centos_8_aarch64_raw        = false
 }

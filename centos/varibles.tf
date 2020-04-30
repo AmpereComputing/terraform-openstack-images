@@ -1,11 +1,3 @@
-variable "enable_centos_7_1901_x86_64_qcow2" {
-  description = "Enable Centos 7.1901 x86_64 QCOW2 Image"
-  default     = 0
-}
-variable "enable_centos_7_1901_x86_64_raw" {
-  description = "Enable Centos 7.1901 x86_64 Raw Image"
-  default     = 0
-}
 variable "enable_centos_6_1901_x86_64_qcow2" {
   description = "Enable Centos 6.1901 x86_64 QCOW2 Image"
   default     = 0
@@ -15,12 +7,28 @@ variable "enable_centos_6_1901_x86_64_raw" {
   default     = 0
 }
 
-variable "enable_centos_7_1708_aarch64_raw" {
-  description = "Enable "
+variable "enable_centos_7_x86_64_raw" {
+  description = "Enable 7.2003 x86_64 raw" 
   default     = 0
 }
-variable "enable_centos_7_1708_aarch64_qcow2" {
-  description = "Enable "
+variable "enable_centos_7_x86_64_qcow2" {
+  description = "Enable 7.2003 x86_64 qcow2" 
+  default     = 0
+}
+variable "enable_centos_7_aarch64_raw" {
+  description = "Enable 7.2003 raw"
+  default     = 0
+}
+variable "enable_centos_7_aarch64_qcow2" {
+  description = "Enable 7.2003 qcow2"
+  default     = 0
+}
+variable "enable_centos_8_x86_64_raw" {
+  description = "Enable  8.1.1911-20200113.3 x86_64 raw"
+  default     = 0
+}
+variable "enable_centos_8_x86_64_qcow2" {
+  description = "Enable  8.1.1911-20200113.3 x86_64 raw"
   default     = 0
 }
 variable "enable_centos_8_aarch64_raw" {

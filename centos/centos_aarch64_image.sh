@@ -41,7 +41,7 @@ fi
 if [ $1 = "7" ]
 then
   echo "Centos 7 Detected"
-  export CENTOS_VERSION='1901'
+  export CENTOS_VERSION='2003'
   echo -n "Downloading, extracting, and converting:"
   wget -c http://cloud.centos.org/altarch/${CENTOS_RELEASE}/images/aarch64/CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz -O CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz
   unxz -v CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz
