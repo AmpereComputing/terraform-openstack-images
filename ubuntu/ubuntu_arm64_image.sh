@@ -23,23 +23,31 @@ then
 !! ERROR: No UBUNTU_RELEASE argument supplied to script. Please  !!
 !! supply 'stable, beta or alpha' as an option to the script.    !!
 !!                                                               !!
-!! USAGE: ./ubuntu_image.sh (bionic|xenial|trusty)               !! 
+!! USAGE: ./ubuntu_arm64_image.sh (focal|bionic|xenial|trusty)   !! 
 !! ------------------------------------------------------------- !!"
   cd $PROJECT_DIR
   exit
 fi
 UBUNTU_RELEASE=$1
-if [ $UBUNTU_RELEASE == 'bionic' ]
+if [ $UBUNTU_RELEASE == 'xenial' ]
 then
-  CLOUDIMG="$UBUNTU_RELEASE-server-cloudimg-arm64"
-else
   CLOUDIMG="$UBUNTU_RELEASE-server-cloudimg-arm64-disk1"
+elif [ $UBUNTU_RELEASE == 'trusty' ]
+then
+  CLOUDIMG="$UBUNTU_RELEASE-server-cloudimg-arm64-disk1"
+else
+  CLOUDIMG="$UBUNTU_RELEASE-server-cloudimg-arm64"
 fi
 
-if [ -e $CLOUDIMG.img ]
-  echo "Ubuntu image found.  Removing image."
-  # rm -rf $UBUNTU_RELEASE-server-cloudimg-arm64-disk1.*
+if [ -e $UBUNTU_RELEASE-server-cloudimg-arm64-disk1.img ]
 then
+  echo "Ubuntu image found.  Removing image."
+  rm -rf $UBUNTU_RELEASE-server-cloudimg-arm64-disk1.*
+elif [ -e $UBUNTU_RELEASE-server-cloudimg-arm64.img ]
+then
+  echo "Ubuntu image found.  Removing image."
+  rm -rf $UBUNTU_RELEASE-server-cloudimg-arm64.*
+else
   echo "Proceeding to downloading Ubuntu $1 image."
   echo
 fi
