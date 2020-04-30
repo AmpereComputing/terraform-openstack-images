@@ -13,13 +13,10 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | ------------------- | --- | ---| ---| ----- | --- |
 | Archlinux | LATEST | X | | X | X |
 | CentOS | 6.1901 | X | | X | X |
-| CentOS | 7.1901 | X | | X | X |
+| CentOS | 7.2003 | X | X | X | X |
 | CentOS | 7 | | X | X | X |
 | CentOS | 8 | X | X | X | X |
 | CirrOS | 0.4.0 | X | | X | X |
-| CoreOS | Stable | X | | X | X |
-| CoreOS | Alpha | X | | X | X |
-| CoreOS | Beta | X | | X | X |
 | Debian | 9 | X | X | X | X |
 | Debian | 10 | X | X | X | X |
 | Devuan | ASCII 2.0.0 | X | | X | X |

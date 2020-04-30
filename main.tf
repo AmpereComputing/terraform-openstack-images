@@ -30,16 +30,6 @@ module "cirros" {
   enable_cirros_040_x86_64_raw   = false
 }
 
-module "coreos" {
-  source                                   = "./coreos"
-  enable_coreos_current_stable_amd64_qcow2 = false
-  enable_coreos_current_stable_amd64_raw   = false
-  enable_coreos_current_alpha_amd64_qcow2  = false
-  enable_coreos_current_alpha_amd64_raw    = false
-  enable_coreos_current_beta_amd64_qcow2   = false
-  enable_coreos_current_beta_amd64_raw     = false
-}
-
 module "debian" {
   source                       = "./debian"
   enable_debian_9_amd64_qcow2  = false
