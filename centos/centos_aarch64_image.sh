@@ -43,7 +43,7 @@ then
   echo "Centos 7 Detected"
   export CENTOS_VERSION='2003'
   echo -n "Downloading, extracting, and converting:"
-  wget -c http://cloud.centos.org/altarch/${CENTOS_RELEASE}/images/aarch64/CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz -O CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz
+  wget -c http://cloud.centos.org/altarch/${CENTOS_RELEASE}/images/CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz -O CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz
   unxz -v CentOS-$CENTOS_RELEASE-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2.xz
   qemu-img convert -f qcow2 -O raw CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.qcow2 CentOS-${CENTOS_RELEASE}-aarch64-GenericCloud-${CENTOS_VERSION}.raw
 fi
