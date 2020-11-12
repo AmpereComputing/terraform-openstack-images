@@ -100,7 +100,7 @@ resource "openstack_images_image_v2" "debian_10_arm64_qcow2" {
 resource "openstack_images_image_v2" "debian_11_arm64_qcow2" {
   count = var.enable_debian_11_arm64_qcow2 ? 1:0
   name   = "debian-11-generic-arm64-daily-20201112-452.qcow2"
-  image_source_url = "$https://cloud.debian.org/images/cloud/bullseye/daily/20201112-452/debian-11-generic-arm64-daily-20201112-452.qcow2"
+  image_source_url = "https://cloud.debian.org/images/cloud/bullseye/daily/20201112-452/debian-11-generic-arm64-daily-20201112-452.qcow2"
   container_format = "bare"
   disk_format = "qcow2"
   visibility = "public"
