@@ -27,7 +27,7 @@ variable "enable_centos_7_x86_64_raw" {
   description = "Enable Centos 7.2003 x86_64 raw image"
   type        = bool
 }
-variable "enable_centos_8_x86_64_qcow2 {
+variable "enable_centos_8_x86_64_qcow2" {
   description = "Enable Centos 8 x86_64 qcow2 image"
   type        = bool
 }
