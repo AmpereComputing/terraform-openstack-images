@@ -57,14 +57,15 @@ then
   echo -n "Converting images."
   qemu-img convert -f qcow2 -O raw CentOS-${CENTOS_RELEASE}-GenericCloud-${CENTOS_RELEASE}.${CENTOS_VERSION}.aarch64.qcow2 CentOS-${CENTOS_RELEASE}-GenericCloud-${CENTOS_RELEASE}.${CENTOS_VERSION}.aarch64.raw
 fi
+
 if [ $1 = "8.2" ]
 then
-  echo "Centos 8 Detected"
+  echo "Centos 8.2 Detected"
   export CENTOS_VERSION='2.2004-20200611.2'
   echo -n "Downloading and extracting inline:"
-  wget -c https://cloud.centos.org/centos/${CENTOS_RELEASE}/aarch64/images/CentOS-${CENTOS_RELEASE}-GenericCloud-${CENTOS_RELEASE}.${CENTOS_VERSION}.aarch64.qcow2 -O CentOS-${CENTOS_RELEASE}-GenericCloud-${CENTOS_RELEASE}.${CENTOS_VERSION}.aarch64.qcow2
+  wget -c http://cloud.centos.org/centos/8/aarch64/images/CentOS-8-GenericCloud-8.2.2004-20200611.2.aarch64.qcow2 -O CentOS-8-GenericCloud-8.2.2004-20200611.2.aarch64.qcow2
   echo -n "Converting images."
-  qemu-img convert -f qcow2 -O raw CentOS-${CENTOS_RELEASE}-GenericCloud-${CENTOS_RELEASE}.${CENTOS_VERSION}.aarch64.qcow2 CentOS-${CENTOS_RELEASE}-GenericCloud-${CENTOS_RELEASE}.${CENTOS_VERSION}.aarch64.raw
+  qemu-img convert -f qcow2 -O raw CentOS-8-GenericCloud-8.2.2004-20200611.2.aarch64.qcow2 CentOS-8-GenericCloud-8.2.2004-20200611.2.aarch64.raw
 fi
 
 cd $PROJECT_DIR

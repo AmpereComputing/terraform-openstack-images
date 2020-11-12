@@ -179,10 +179,10 @@ resource "null_resource" "download-extract-image-centos-8-2-aarch64" {
     command = "${path.module}/centos_aarch64_image.sh 8.2"
   }
 }
-resource "openstack_images_image_v2" "centos_8_aarch64_raw" {
-  count = var.enable_centos_8_aarch64_raw ? 1:0
-  name   = "centos-8-aarch64-GenericCloud-raw"
-  local_file_path = pathexpand("~/.terraform/image_cache/CentOS-8-GenericCloud-8.1.1911-20200113.3.aarch64.raw")
+resource "openstack_images_image_v2" "centos_8_2_aarch64_raw" {
+  count = var.enable_centos_8_2_aarch64_raw ? 1:0
+  name   = "CentOS-8-GenericCloud-8.2.2004-20200611.2.aarch64.raw"
+  local_file_path = pathexpand("~/.terraform/image_cache/CentOS-8-GenericCloud-8.2.2004-20200611.2.aarch64.raw")
   container_format = "bare"
   disk_format = "raw"
   visibility = "public"
