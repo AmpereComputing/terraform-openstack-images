@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 IMAGE_CACHE=$HOME/.terraform/image_cache
-FEDORA_VERSION=( 29 30 31 32)
+FEDORA_VERSION=( 29 30 31 32 33)
 
 if [ ! -d $IMAGE_CACHE ]; then
   mkdir -p $IMAGE_CACHE

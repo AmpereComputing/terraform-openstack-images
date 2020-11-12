@@ -42,6 +42,7 @@ module "debian" {
   enable_debian_9_arm64_raw    = false
   enable_debian_10_arm64_qcow2 = true
   enable_debian_10_arm64_raw   = false
+  enable_debian_11_arm64_qcow2 = true
 }
 
 module "devuan" {
@@ -63,6 +64,8 @@ module "fedora" {
   enable_fedora_cloud_base_31_x86_64_raw   = false
   enable_fedora_cloud_base_32_x86_64_qcow2 = false
   enable_fedora_cloud_base_32_x86_64_raw   = false
+  enable_fedora_cloud_base_33_x86_64_qcow2 = false
+  enable_fedora_cloud_base_33_x86_64_raw   = false
   enable_fedora_server_29_aarch64_qcow2    = false
   enable_fedora_server_29_aarch64_raw      = false
   enable_fedora_server_30_aarch64_qcow2    = false
@@ -71,6 +74,8 @@ module "fedora" {
   enable_fedora_server_31_aarch64_raw      = false
   enable_fedora_server_32_aarch64_qcow2    = true
   enable_fedora_server_32_aarch64_raw      = false
+  enable_fedora_server_33_aarch64_qcow2    = true
+  enable_fedora_server_33_aarch64_raw      = false
 }
 
 module "flatcar-linux" {
@@ -113,14 +118,6 @@ module "rancheros" {
   source                                 = "./rancheros"
   enable_rancheros_openstack_amd64_qcow2 = false
   enable_rancheros_openstack_amd64_raw   = false
-}
-
-module "k3os" {
-  source                  = "./k3os"
-  enable_k3os_arm64_qcow2 = false
-  enable_k3os_arm64_raw   = false
-  enable_k3os_amd64_qcow2 = false
-  enable_k3os_amd64_raw   = false
 }
 
 module "ubuntu" {

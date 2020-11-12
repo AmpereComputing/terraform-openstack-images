@@ -22,7 +22,7 @@ then
 !! ERROR: No FEDORA_RELEASE argument supplied to script. Please  !!
 !! supply '29,30,31,32' as an option to the script.              !!
 !!                                                               !!
-!! USAGE: ./fedora_images.sh (29|30|31|32)                       !!
+!! USAGE: ./fedora_images.sh (29|30|31|32|33)                       !!
 !! ------------------------------------------------------------- !!"
   cd $PROJECT_DIR
   exit
@@ -39,6 +39,10 @@ then
 elif [ ${FEDORA_RELEASE} == '32' ]
 then
   PT=6
+  URL=https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/${FEDORA_RELEASE}/Cloud/x86_64/images/Fedora-Cloud-Base-${FEDORA_RELEASE}-1.${PT}.x86_64.raw.xz
+elif [ ${FEDORA_RELEASE} == '33' ]
+then
+  PT=2
   URL=https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/${FEDORA_RELEASE}/Cloud/x86_64/images/Fedora-Cloud-Base-${FEDORA_RELEASE}-1.${PT}.x86_64.raw.xz
 else
   PT=2
