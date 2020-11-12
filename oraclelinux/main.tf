@@ -6,6 +6,6 @@ resource "openstack_images_image_v2" "oraclelinux_r8u2_arm64" {
   disk_format = "raw"
   properties = {
     os_distro = "oraclelinux"
-    kernel_args = "oraclelinux.mode=live oraclelinux.debug=true oraclelinux.datasources=openstack"
+#   kernel_args = "oraclelinux.mode=live oraclelinux.debug=true oraclelinux.datasources=openstack"
   }
 }
