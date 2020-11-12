@@ -31,3 +31,7 @@ variable "enable_debian_10_arm64_qcow2" {
   default     = 0
 }
 
+variable "enable_debian_11_arm64_qcow2" {
+  description = "Enable "
+  default     = 0
+}

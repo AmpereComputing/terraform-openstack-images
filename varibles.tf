@@ -57,6 +57,15 @@ variable "enable_centos_8_aarch64_qcow2" {
   default     = 0
 }
 
+variable "enable_centos_8_2_aarch64_raw" {
+  description = "Enable 8.2.2004-20200611.2 raw"
+  default     = 0
+}
+variable "enable_centos_8_2_aarch64_qcow2" {
+  description = "Enable 8.2.2004-20200611.2 qcow2"
+  default     = 0
+}
+
 variable "enable_cirros_040_x86_64_raw" {
   description = "Enable CirrOS 0.4.0 x86_64 Raw Images"
   default     = 0
@@ -103,6 +112,10 @@ variable "enable_debian_10_arm64_raw" {
 }
 
 variable "enable_debian_10_arm64_qcow2" {
+  description = "Enable "
+  default     = 0
+}
+variable "enable_debian_11_arm64_qcow2" {
   description = "Enable "
   default     = 0
 }
