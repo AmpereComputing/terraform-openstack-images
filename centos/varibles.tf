@@ -39,3 +39,11 @@ variable "enable_centos_8_aarch64_qcow2" {
   description = "Enable  8.1.1911-20200113.3 qcow2"
   default     = 0
 }
+variable "enable_centos_8_2_aarch64_raw" {
+  description = "Enable 8.2.2004-20200611.2 raw"
+  default     = 0
+}
+variable "enable_centos_8_2_aarch64_qcow2" {
+  description = "Enable 8.2.2004-20200611.2 qcow2"
+  default     = 0
+}

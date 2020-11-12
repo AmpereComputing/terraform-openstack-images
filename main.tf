@@ -14,8 +14,10 @@ module "centos" {
   enable_centos_8_x86_64_raw         = false
   enable_centos_7_aarch64_qcow2      = true
   enable_centos_7_aarch64_raw        = false
-  enable_centos_8_aarch64_qcow2      = true
+  enable_centos_8_aarch64_qcow2      = false
   enable_centos_8_aarch64_raw        = false
+  enable_centos_8_2_aarch64_qcow2    = true
+  enable_centos_8_2_aarch64_raw      = false
 }
 
 module "centos-atomic" {
