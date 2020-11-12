@@ -1,7 +1,7 @@
 module "archlinux" {
   source                               = "./archlinux"
-# enable_archlinux_latest_x86_64_qcow2 = false
-# enable_archlinux_latest_x86_64_raw   = false
+  enable_archlinux_latest_x86_64_qcow2 = var.enable_archlinux_latest_x86_64_qcow2
+  enable_archlinux_latest_x86_64_raw   = var.enable_archlinux_latest_x86_64_qcow2
 }
 
 module "centos" {
