@@ -347,6 +347,12 @@ variable "enable_opensuse_151_aarch64_qcow2" {
   type        = bool
 }
 
+variable "enable_oraclelinux_r8u2_arm64_iso" {
+  description = "Enable OracleLinux R8U2 arm64 iso image"
+  type        = bool
+}
+
+
 variable "enable_rancheros_openstack_amd64_raw" {
   description = "Enable RancherOS AMD64 raw image"
   type        = bool

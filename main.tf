@@ -114,6 +114,12 @@ module "opensuse" {
   enable_opensuse_151_aarch64_raw       = var.enable_opensuse_151_aarch64_raw
 }
 
+module "oraclelinux" {
+  source                            = "./oraclelinux"
+  enable_oraclelinux_r8u2_arm64_iso =  var.enable_oraclelinux_r8u2_arm64_iso
+}
+
+
 module "rancheros" {
   source                                 = "./rancheros"
   enable_rancheros_openstack_amd64_qcow2 = var.enable_rancheros_openstack_amd64_qcow2
