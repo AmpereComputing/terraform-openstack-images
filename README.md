@@ -31,7 +31,8 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Flatcar Linux | Stable | X | | X | X |
 | Flatcar Linux | Alpha | X | X | X | X |
 | Flatcar Linux | Beta | X | | X | X |
-| FreeBSD | 12.0 Release | X | X | X | X |
+| FreeBSD | 12.0 Release | X | X | | |
+| FreeBSD | 13.0 Current | | | X | X |
 | Kali-Linux | Rolling Latest| X | | X | X |
 | OpenSuSE | Leap 15.0 |X | | X | X |
 | OpenSuSE | Leap 15.1 |X | X | X | X |
