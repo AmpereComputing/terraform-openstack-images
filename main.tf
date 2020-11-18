@@ -94,8 +94,8 @@ module "freebsd" {
   source                                   = "./freebsd"
   enable_freebsd_120_release_amd64_qcow2   = var.enable_freebsd_120_release_amd64_qcow2
   enable_freebsd_120_release_amd64_raw     = var.enable_freebsd_120_release_amd64_raw
-  enable_freebsd_120_release_aarch64_qcow2 = var.enable_freebsd_120_release_aarch64_qcow2
-  enable_freebsd_120_release_aarch64_raw   = var.enable_freebsd_120_release_aarch64_raw
+  enable_freebsd_130_current_aarch64_qcow2 = var.enable_freebsd_130_current_aarch64_qcow2
+  enable_freebsd_130_current_aarch64_raw   = var.enable_freebsd_130_current_aarch64_raw
 }
 
 module "kali-linux" {

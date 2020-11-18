@@ -16,14 +16,15 @@ echo
 
 cd $IMAGE_CACHE
 
-if [ -e FreeBSD-12.0-RELEASE-amd64.qcow2.xz ]
+if [ -e FreeBSD-13.0-CURRENT-arm64-aarch64.qcow2.xz ]
 then
-  echo "FreeBSD-12.0-RELEASE-amd64.qcow2.xz image found.  Removing image."
-  rm -rf FreeBSD-12.0-RELEASE-amd64.*
+  echo "FreeBSD-13.0-CURRENT-arm64-aarch64.qcow2.xz image found.  Removing image."
+  rm -rf FreeBSD-13.0-CURRENT-arm64*
 else
-  echo "No previous FreeBSD-12.0 Image Found."
+  echo "No previous FreeBSD-13.0 Image Found."
 fi
 wget https://download.freebsd.org/ftp/releases/VM-IMAGES/12.0-RELEASE/aarch64/Latest/FreeBSD-12.0-RELEASE-arm64-aarch64.qcow2.xz -O FreeBSD-12.0-RELEASE-arm64-aarch64.qcow2.xz
-unxz -v FreeBSD-12.0-RELEASE-arm64-aarch64.qcow2.xz
-qemu-img convert -f qcow2 -O raw FreeBSD-12.0-RELEASE-arm64-aarch64.qcow2 FreeBSD-12.0-RELEASE-arm64-aarch64.raw
+https://download.freebsd.org/ftp/snapshots/VM-IMAGES/13.0-CURRENT/aarch64/Latest/FreeBSD-13.0-CURRENT-arm64-aarch64.qcow2.xz -O FreeBSD-13.0-CURRENT-arm64-aarch64.qcow2.xz
+unxz -v FreeBSD-13.0-CURRENT-arm64-aarch64.qcow2.xz
+qemu-img convert -f qcow2 -O raw FreeBSD-13.0-CURRENT-arm64-aarch64.qcow2 FreeBSD-13.0-CURRENT-arm64-aarch64.raw
 cd $PROJECT_DIR

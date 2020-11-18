@@ -295,13 +295,13 @@ variable "enable_freebsd_120_release_amd64_raw" {
   type        = bool
 }
 
-variable "enable_freebsd_120_release_aarch64_qcow2" {
-  description = "Enable FreeBSD 12.0 Release aarch64 qcow2 image"
+variable "enable_freebsd_130_current_aarch64_qcow2" {
+  description = "Enable FreeBSD 13.0 Current aarch64 qcow2 image"
   type        = bool
 }
 
-variable "enable_freebsd_120_release_aarch64_raw" {
-  description = "Enable FreeBSD 12.0 Release aarch64 raw image"
+variable "enable_freebsd_130_current_aarch64_raw" {
+  description = "Enable FreeBSD 13.0 Current aarch64 raw image"
   type        = bool
 }
 
