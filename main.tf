@@ -27,9 +27,11 @@ module "centos-atomic" {
 }
 
 module "cirros" {
-  source                         = "./cirros"
-  enable_cirros_040_x86_64_qcow2 = var.enable_cirros_040_x86_64_qcow2
-  enable_cirros_040_x86_64_raw   = var.enable_cirros_040_x86_64_raw
+  source                          = "./cirros"
+  enable_cirros_051_x86_64_qcow2  = var.enable_cirros_051_x86_64_qcow2
+  enable_cirros_051_x86_64_raw    = var.enable_cirros_051_x86_64_raw
+  enable_cirros_051_aarch64_qcow2 = var.enable_cirros_051_aarch64_qcow2
+  enable_cirros_051_aarch64_raw   = var.enable_cirros_051_aarch64_raw
 }
 
 module "debian" {

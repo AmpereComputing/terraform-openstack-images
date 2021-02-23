@@ -74,13 +74,22 @@ variable "enable_centos_8_2_aarch64_qcow2" {
   type        = bool
 }
 
-variable "enable_cirros_040_x86_64_raw" {
-  description = "Enable CirrOS 0.4.0 x86_64 raw images"
+variable "enable_cirros_051_x86_64_raw" {
+  description = "Enable CirrOS 0.5.1 x86_64 raw images"
   type        = bool
 }
 
-variable "enable_cirros_040_x86_64_qcow2" {
-  description = "Enable CirrOS 0.4.0 x86_64 qcow2 images"
+variable "enable_cirros_051_x86_64_qcow2" {
+  description = "Enable CirrOS 0.5.1 x86_64 qcow2 images"
+  type        = bool
+}
+variable "enable_cirros_051_aarch64_raw" {
+  description = "Enable CirrOS 0.5.1 aarch64 raw images"
+  type        = bool
+}
+
+variable "enable_cirros_051_aarch64_qcow2" {
+  description = "Enable CirrOS 0.5.1 aarch64 qcow2 images"
   type        = bool
 }
 
