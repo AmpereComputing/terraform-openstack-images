@@ -15,7 +15,7 @@ resource "openstack_images_image_v2" "cirros-051-x86_64-raw" {
   disk_format = "raw"
   visibility = "public"
   depends_on = [
-    null_resource.download-extract-image-cirros-040-x86_64,
+    null_resource.download-extract-image-cirros-051-x86_64,
   ]
   properties = {
     os_distro = "cirros"
@@ -47,7 +47,7 @@ resource "openstack_images_image_v2" "cirros-051-aarch64-raw" {
   disk_format = "raw"
   visibility = "public"
   depends_on = [
-    null_resource.download-extract-image-cirros-040-aarch64,
+    null_resource.download-extract-image-cirros-051-aarch64,
   ]
   properties = {
     os_distro = "cirros"
