@@ -16,14 +16,14 @@ echo
 
 cd $IMAGE_CACHE
 
-if [ -e cirros-0.4.0-x86_64-disk.raw ]
+if [ -e cirros-0.5.1-x86_64-disk.raw ]
 then
-  echo "cirros-0.4.0-x86_64-disk.raw image found.  Removing image."
-  rm -rf cirros-0.4.0-x86_64-disk.*
+  echo "cirros-0.5.1-x86_64-disk.raw image found.  Removing image."
+  rm -rf cirros-0.5.1-x86_64-disk.*
 else
   echo "No previous Cirros image found."
 fi
-wget https://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img 
+wget https://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img 
 echo "Converting qcow image to raw"
-qemu-img convert -f qcow2 -O raw cirros-0.4.0-x86_64-disk.img cirros-0.4.0-x86_64-disk.raw
+qemu-img convert -f qcow2 -O raw cirros-0.5.1-x86_64-disk.img cirros-0.5.1-x86_64-disk.raw
 cd $PROJECT_DIR
