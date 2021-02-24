@@ -73,6 +73,14 @@ variable "enable_centos_8_2_aarch64_qcow2" {
   description = "Enable 8.2.2004-20200611.2 qcow2"
   type        = bool
 }
+variable "enable_centos_8_3_aarch64_raw" {
+  description = "Enable 8.3.2011-20201204.2 aarch64 raw"
+  type        = bool
+}
+variable "enable_centos_8_3_aarch64_qcow2" {
+  description = "Enable 8.3.2011-20201204.2 aarch64 qcow2"
+  type        = bool
+}
 
 variable "enable_cirros_051_x86_64_raw" {
   description = "Enable CirrOS 0.5.1 x86_64 raw images"
