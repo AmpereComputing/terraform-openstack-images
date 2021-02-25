@@ -109,6 +109,7 @@ module "kali-linux" {
 }
 
 module "openeuler" {
+  source                                  = "./openeuler"
   enable_openeuler_2003-LTS_x86_64_raw    = var.enable_openeuler_2003-LTS_x86_64_raw
   enable_openeuler_2003-LTS_x86_64_qcow2  = var.enable_openeuler_2003-LTS_x86_64_qcow2
   enable_openeuler_2003-LTS_aarch64_raw   = var.enable_openeuler_2003-LTS_aarch64_raw
