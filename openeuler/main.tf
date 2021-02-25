@@ -1,5 +1,4 @@
 # openEuler
-
 resource "null_resource" "download-extract-image-openeuler-2003-LTS-x86_64" {
   count = var.enable_openeuler_2003_LTS_x86_64_raw || count = var.enable_openeuler2003_LTS_x86_64_qcow2 ? 1:0
   provisioner "local-exec" {
