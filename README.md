@@ -262,6 +262,13 @@ cd terraform-openstack-images
 * [kali-linux/main.tf](kali-linux/main.tf)
 * [kali-linux/variables.tf](kali-linux/variables.tf)
 
+### openEuler
+
+ * [openeuler/main.tf](openeuler/main.tf)
+ * [openeuler/openeuler_aarch64_image.sh](openeuler/openeuler_aarch64_image.sh)
+ * [openeuler/openeuler_x86_64_image.sh](openeuler/openeuler_x86_64_image.sh)
+ * [openeuler/varibles.tf](openeuler/varibles.tf)
+
 ### OpenSuSE
 
 * [opensuse/opensuse_image.sh](opensuse/opensuse_image.sh)
