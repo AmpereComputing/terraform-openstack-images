@@ -334,6 +334,23 @@ variable "enable_kali_linux_2019_3_amd64_raw" {
   type        = bool
 }
 
+variable "enable_openeuler_2003-LTS_x86_64_raw" {
+  description = "Enable openEuler-20.03-LTS.x86_64.raw"
+  type        = bool
+}
+variable "enable_openeuler_2003-LTS_x86_64_qcow2" {
+  description = "Enable openEuler-20.03-LTS.x86_64.qcow2"
+  type        = bool
+}
+variable "enable_openeuler_2003-LTS_aarch64_raw" {
+  description = "Enable openEuler-20.03-LTS.aarch64.raw"
+  type        = bool
+}
+variable "enable_openeuler_2003-LTS_aarch64_qcow2" {
+  description = "Enable openEuler-20.03-LTS.aarch64.qcow2"
+  type        = bool
+}
+
 variable "enable_opensuse_leap_150_x86_64_qcow2" {
   description = "Enable openSUSE Leap 15.0 x86_64 qcow2 images"
   type        = bool

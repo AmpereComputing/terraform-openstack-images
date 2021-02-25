@@ -108,6 +108,13 @@ module "kali-linux" {
   enable_kali_linux_2019_3_amd64_raw   = var.enable_kali_linux_2019_3_amd64_raw
 }
 
+module "openeuler" {
+  enable_openeuler_2003-LTS_x86_64_raw    = var.enable_openeuler_2003-LTS_x86_64_raw
+  enable_openeuler_2003-LTS_x86_64_qcow2  = var.enable_openeuler_2003-LTS_x86_64_qcow2
+  enable_openeuler_2003-LTS_aarch64_raw   = var.enable_openeuler_2003-LTS_aarch64_raw
+  enable_openeuler_2003-LTS_aarch64_qcow2 = var.enable_openeuler_2003-LTS_aarch64_qcow2
+}
+
 module "opensuse" {
   source                                = "./opensuse"
   enable_opensuse_leap_150_x86_64_qcow2 = var.enable_opensuse_leap_150_x86_64_qcow2

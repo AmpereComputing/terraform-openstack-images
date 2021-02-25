@@ -34,6 +34,7 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | FreeBSD | 12.0 Release | X | X | | |
 | FreeBSD | 13.0 Current | | | X | X |
 | Kali-Linux | Rolling Latest| X | | X | X |
+| openEuler | 20.03-LTS |X | X | X | X |
 | OpenSuSE | Leap 15.0 |X | | X | X |
 | OpenSuSE | Leap 15.1 |X | X | X | X |
 | RancherOS | 1.5.5 | X | | X | X |
@@ -127,6 +128,11 @@ module "glance_images" {
   # Kali Linux
   enable_kali_linux_2019_3_amd64_qcow2       = false
   enable_kali_linux_2019_3_amd64_raw         = false
+  # openEuler
+  enable_openeuler_2003-LTS_x86_64_raw       = false
+  enable_openeuler_2003-LTS_x86_64_qcow2     = false
+  enable_openeuler_2003-LTS_aarch64_raw      = false
+  enable_openeuler_2003-LTS_aarch64_qcow2    = false
   # OpenSuse
   enable_opensuse_leap_150_x86_64_qcow2      = false
   enable_opensuse_leap_150_x86_64_raw        = false
