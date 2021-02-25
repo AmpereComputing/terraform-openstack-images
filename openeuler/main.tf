@@ -1,6 +1,6 @@
 # openEuler
 resource "null_resource" "download-extract-image-openeuler-2003-LTS-x86_64" {
-  count = var.enable_openeuler_2003_LTS_x86_64_raw || count = var.enable_openeuler2003_LTS_x86_64_qcow2 ? 1:0
+  count = var.enable_openeuler_2003_LTS_x86_64_raw || var.enable_openeuler2003_LTS_x86_64_qcow2 ? 1:0
   provisioner "local-exec" {
     command = "sh openeuler_x86_64_image.sh"
   }
@@ -37,7 +37,7 @@ resource "openstack_images_image_v2" "openeuler-2003-x86_64-qcow2" {
 }
 
 resource "null_resource" "download-extract-image-openeuler-2003-LTS-aarch64" {
-  count = var.enable_openeuler_2003_LTS_aarch64_raw || count = var.enable_openeuler2003_LTS_aarch64_qcow2 ? 1:0
+  count = var.enable_openeuler_2003_LTS_aarch64_raw || var.enable_openeuler2003_LTS_aarch64_qcow2 ? 1:0
   provisioner "local-exec" {
     command = "sh openeuler_aarch64_image.sh"
   }
