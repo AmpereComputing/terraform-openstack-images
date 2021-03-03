@@ -312,17 +312,15 @@ variable "enable_freebsd_120_release_amd64_raw" {
   type        = bool
 }
 
-variable "enable_freebsd_130_current_aarch64_qcow2" {
-  description = "Enable FreeBSD 13.0 Current aarch64 qcow2 image"
+variable "enable_freebsd_130_aarch64_qcow2" {
+  description = "Enable FreeBSD 13.0 BETA4 aarch64 qcow2 image"
   type        = bool
 }
 
-variable "enable_freebsd_130_current_aarch64_raw" {
-  description = "Enable FreeBSD 13.0 Current aarch64 raw image"
+variable "enable_freebsd_130_aarch64_raw" {
+  description = "Enable FreeBSD 13.0 BETA4 aarch64 raw image"
   type        = bool
 }
-
-
 
 variable "enable_kali_linux_2019_3_amd64_qcow2" {
   description = "Enable Kali Linux 2019.3 AMD64 qcow2 image"
