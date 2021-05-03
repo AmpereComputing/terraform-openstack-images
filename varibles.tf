@@ -261,6 +261,17 @@ variable "enable_fedora_server_33_aarch64_qcow2" {
   type        = bool
 }
 
+variable "enable_fedora_server_34_aarch64_raw" {
+  description = "Enable Fedora 34 AARCH raw images"
+  type        = bool
+}
+
+variable "enable_fedora_server_34_aarch64_qcow2" {
+  description = "Enable Fedora 34 AARCH qcow2 images"
+  type        = bool
+}
+
+
 variable "enable_flatcar_current_stable_amd64_qcow2" {
   description = "Enable Flatcar Linux Current Stable AMD64 qcow2 image"
   type        = bool

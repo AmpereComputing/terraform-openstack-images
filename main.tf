@@ -80,6 +80,8 @@ module "fedora" {
   enable_fedora_server_32_aarch64_raw      = var.enable_fedora_server_32_aarch64_raw
   enable_fedora_server_33_aarch64_qcow2    = var.enable_fedora_server_33_aarch64_qcow2
   enable_fedora_server_33_aarch64_raw      = var.enable_fedora_server_33_aarch64_raw
+  enable_fedora_server_34_aarch64_qcow2    = var.enable_fedora_server_34_aarch64_qcow2
+  enable_fedora_server_34_aarch64_raw      = var.enable_fedora_server_34_aarch64_raw
 }
 
 module "flatcar-linux" {

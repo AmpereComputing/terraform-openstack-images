@@ -96,3 +96,11 @@ variable "enable_fedora_server_33_aarch64_qcow2" {
   description = "Enable Fedora 33 AARCH QCOW2 Images"
   default     = 0
 }
+variable "enable_fedora_server_34_aarch64_raw" {
+  description = "Enable Fedora 34 AARCH Raw Images"
+  default     = 0
+}
+variable "enable_fedora_server_34_aarch64_qcow2" {
+  description = "Enable Fedora 34 AARCH QCOW2 Images"
+  default     = 0
+}
