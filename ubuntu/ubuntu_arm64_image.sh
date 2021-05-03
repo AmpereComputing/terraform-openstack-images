@@ -19,12 +19,12 @@ cd $IMAGE_CACHE
 
 if [ -z "$1" ]
 then
-  echo "!! ------------------------------------------------------------- !!
-!! ERROR: No UBUNTU_RELEASE argument supplied to script. Please  !!
-!! supply 'stable, beta or alpha' as an option to the script.    !!
-!!                                                               !!
-!! USAGE: ./ubuntu_arm64_image.sh (focal|bionic|xenial|trusty)   !! 
-!! ------------------------------------------------------------- !!"
+  echo "!! -------------------------------------------------------------------- !!
+!! ERROR: No UBUNTU_RELEASE argument supplied to script. Please         !!
+!! supply 'stable, beta or alpha' as an option to the script.           !!
+!!                                                                      !!
+!! USAGE: ./ubuntu_arm64_image.sh (hirsute|focal|bionic|xenial|trusty)  !! 
+!! -------------------------------------------------------------------- !!"
   cd $PROJECT_DIR
   exit
 fi

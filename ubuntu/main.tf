@@ -133,6 +133,40 @@ resource "openstack_images_image_v2" "ubuntu-1404-trusty-amd64-qcow2" {
   }
 }
 
+
+resource "null_resource" "download-extract-image-hirsute-arm64" {
+  count = var.enable_ubuntu_2104_hirsute_arm64_raw ? 1:0
+  provisioner "local-exec" {
+    command = "${path.module}/ubuntu_image.sh hirsute"
+  }
+}
+resource "openstack_images_image_v2" "ubuntu_2104_hirsute_arm64_raw" {
+  count = var.enable_ubuntu_2104_hirsute_arm64_raw ? 1:0
+  name   = "ubuntu-21.04-hirsute-server-cloudimg-arm64-raw"
+  local_file_path = pathexpand("~/.terraform/image_cache/hirsute-server-cloudimg-arm64.raw")
+  container_format = "bare"
+  disk_format = "raw"
+  visibility = "public"
+  depends_on = [
+    null_resource.download-extract-image-hirsute-arm64,
+  ]
+  properties = {
+    os_distro = "ubuntu"
+  }
+}
+resource "openstack_images_image_v2" "ubuntu_2104_hirsute_arm64_qcow2" {
+  count = var.enable_ubuntu_2104_hirsute_arm64_qcow2 ? 1:0
+  name   = "ubuntu-21.04-hirsute-server-cloudimg-arm64-qcow2"
+  image_source_url = "https://cloud-images.ubuntu.com/daily/server/hirsute/current/hirsute-server-cloudimg-arm64.img"
+  container_format = "bare"
+  disk_format = "qcow2"
+  visibility = "public"
+  properties = {
+    os_distro = "ubuntu"
+  }
+}
+
+
 resource "null_resource" "download-extract-image-focal-arm64" {
   count = var.enable_ubuntu_2004_focal_arm64_raw ? 1:0
   provisioner "local-exec" {

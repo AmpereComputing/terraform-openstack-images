@@ -447,6 +447,15 @@ variable "enable_ubuntu_1404_amd64_raw" {
   type        = bool
 }
 
+variable "enable_ubuntu_2104_hirsute_arm64_raw" {
+  description = "Enable Ubuntu 21.04 arm64 raw image"
+  type        = bool
+}
+variable "enable_ubuntu_2104_hirsute_arm64_qcow2" {
+  description = "Enable Ubuntu 21.04 arm64 qcow2 image"
+  type        = bool
+}
+
 variable "enable_ubuntu_2004_focal_arm64_raw" {
   description = "Enable Ubuntu 20.04 arm64 raw image"
   type        = bool

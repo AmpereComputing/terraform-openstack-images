@@ -32,6 +32,16 @@ variable "enable_ubuntu_1404_amd64_raw" {
   default     = 0
 }
 
+variable "enable_ubuntu_2104_hirsute_arm64_raw" {
+  description = "Enable Ubuntu 21.04 (hirsute) ARM64 Raw"
+  default     = 0
+}
+variable "enable_ubuntu_2104_hirsute_arm64_qcow2" {
+  description = "Enable Ubuntu 21.04 (hirsute) ARM64 qcow2"
+  default     = 0
+}
+
+
 variable "enable_ubuntu_2004_focal_arm64_raw" {
   description = "Enable "
   default     = 0

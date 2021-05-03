@@ -141,23 +141,25 @@ module "rancheros" {
 }
 
 module "ubuntu" {
-  source                                = "./ubuntu"
-  enable_ubuntu_2004_amd64_qcow2        = var.enable_ubuntu_2004_amd64_qcow2
-  enable_ubuntu_2004_amd64_raw          = var.enable_ubuntu_2004_amd64_raw
-  enable_ubuntu_1804_amd64_qcow2        = var.enable_ubuntu_1804_amd64_qcow2
-  enable_ubuntu_1804_amd64_raw          = var.enable_ubuntu_1804_amd64_raw
-  enable_ubuntu_1604_amd64_qcow2        = var.enable_ubuntu_1604_amd64_qcow2
-  enable_ubuntu_1604_amd64_raw          = var.enable_ubuntu_1604_amd64_raw  
-  enable_ubuntu_1404_amd64_qcow2        = var.enable_ubuntu_1404_amd64_qcow2
-  enable_ubuntu_1404_amd64_raw          = var.enable_ubuntu_1404_amd64_raw
-  enable_ubuntu_2004_focal_arm64_qcow2  = var.enable_ubuntu_2004_focal_arm64_qcow2
-  enable_ubuntu_2004_focal_arm64_raw    = var.enable_ubuntu_2004_focal_arm64_raw
-  enable_ubuntu_1804_bionic_arm64_qcow2 = var.enable_ubuntu_1804_bionic_arm64_qcow2
-  enable_ubuntu_1804_bionic_arm64_raw   = var.enable_ubuntu_1804_bionic_arm64_raw
-  enable_ubuntu_1604_xenial_arm64_qcow2 = var.enable_ubuntu_1604_xenial_arm64_qcow2
-  enable_ubuntu_1604_xenial_arm64_raw   = var.enable_ubuntu_1604_xenial_arm64_raw
-  enable_ubuntu_1404_trusty_arm64_qcow2 = var.enable_ubuntu_1404_trusty_arm64_qcow2
-  enable_ubuntu_1404_trusty_arm64_raw   = var.enable_ubuntu_1404_trusty_arm64_raw
+  source                                  = "./ubuntu"
+  enable_ubuntu_2004_amd64_qcow2          = var.enable_ubuntu_2004_amd64_qcow2
+  enable_ubuntu_2004_amd64_raw            = var.enable_ubuntu_2004_amd64_raw
+  enable_ubuntu_1804_amd64_qcow2          = var.enable_ubuntu_1804_amd64_qcow2
+  enable_ubuntu_1804_amd64_raw            = var.enable_ubuntu_1804_amd64_raw
+  enable_ubuntu_1604_amd64_qcow2          = var.enable_ubuntu_1604_amd64_qcow2
+  enable_ubuntu_1604_amd64_raw            = var.enable_ubuntu_1604_amd64_raw  
+  enable_ubuntu_1404_amd64_qcow2          = var.enable_ubuntu_1404_amd64_qcow2
+  enable_ubuntu_1404_amd64_raw            = var.enable_ubuntu_1404_amd64_raw
+  enable_ubuntu_2104_hirsute_arm64_qcow2  = var.enable_ubuntu_2104_hirsute_arm64_qcow2
+  enable_ubuntu_2104_hirsute_arm64_raw    = var.enable_ubuntu_2104_hirsute_arm64_raw
+  enable_ubuntu_2004_focal_arm64_qcow2    = var.enable_ubuntu_2004_focal_arm64_qcow2
+  enable_ubuntu_2004_focal_arm64_raw      = var.enable_ubuntu_2004_focal_arm64_raw
+  enable_ubuntu_1804_bionic_arm64_qcow2   = var.enable_ubuntu_1804_bionic_arm64_qcow2
+  enable_ubuntu_1804_bionic_arm64_raw     = var.enable_ubuntu_1804_bionic_arm64_raw
+  enable_ubuntu_1604_xenial_arm64_qcow2   = var.enable_ubuntu_1604_xenial_arm64_qcow2
+  enable_ubuntu_1604_xenial_arm64_raw     = var.enable_ubuntu_1604_xenial_arm64_raw
+  enable_ubuntu_1404_trusty_arm64_qcow2   = var.enable_ubuntu_1404_trusty_arm64_qcow2
+  enable_ubuntu_1404_trusty_arm64_raw     = var.enable_ubuntu_1404_trusty_arm64_raw
 }
 
 module "vyos" {
