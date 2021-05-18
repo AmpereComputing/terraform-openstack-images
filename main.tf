@@ -126,6 +126,8 @@ module "opensuse" {
   enable_opensuse_leap_151_x86_64_raw   = var.enable_opensuse_leap_151_x86_64_raw
   enable_opensuse_151_aarch64_qcow2     = var.enable_opensuse_151_aarch64_qcow2
   enable_opensuse_151_aarch64_raw       = var.enable_opensuse_151_aarch64_raw
+  enable_opensuse_152_aarch64_qcow2     = var.enable_opensuse_152_aarch64_qcow2
+  enable_opensuse_152_aarch64_raw       = var.enable_opensuse_152_aarch64_raw
 }
 
 module "oraclelinux" {

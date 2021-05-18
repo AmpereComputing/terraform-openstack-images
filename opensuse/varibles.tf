@@ -16,10 +16,18 @@ variable "enable_opensuse_leap_151_x86_64_raw" {
 }
 
 variable "enable_opensuse_151_aarch64_raw" {
-  description = "Enable "
+  description = "Enable OpenSUSE 15.1 aarch64 raw"
   default     = 0
 }
 variable "enable_opensuse_151_aarch64_qcow2" {
-  description = "Enable "
+  description = "Enable OpenSUSE 15.1 aarch64 qcow2"
+  default     = 0
+}
+variable "enable_opensuse_152_aarch64_raw" {
+  description = "Enable OpenSUSE 15.2 aarch64 raw"
+  default     = 0
+}
+variable "enable_opensuse_152_aarch64_qcow2" {
+  description = "Enable OpenSUSE 15.2 aarch64 qcow2"
   default     = 0
 }

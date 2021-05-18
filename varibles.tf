@@ -381,12 +381,20 @@ variable "enable_opensuse_leap_151_x86_64_raw" {
 }
 
 variable "enable_opensuse_151_aarch64_raw" {
-  description = "Enable "
+  description = "Enable opensuse 5.1 aarch64 raw"
   type        = bool
 }
 
 variable "enable_opensuse_151_aarch64_qcow2" {
-  description = "Enable "
+  description = "Enable opensuse 5.1 aarch64 qcow2"
+  type        = bool
+}
+variable "enable_opensuse_152_aarch64_qcow2" {
+  description = "Enable opensuse 5.2 aarch64 qcow2"
+  type        = bool
+}
+variable "enable_opensuse_152_aarch64_raw" {
+  description = "Enable opensuse 5.2 aarch64 raw"
   type        = bool
 }
 
