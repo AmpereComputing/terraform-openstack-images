@@ -82,6 +82,15 @@ variable "enable_centos_8_3_aarch64_qcow2" {
   type        = bool
 }
 
+variable "enable_centos_stream_8_aarch64_raw" {
+  description = "Enable CentOS Stream 8-20210210.0 aarch64 raw"
+  type        = bool
+}
+variable "enable_centos_stream_8_aarch64_qcow2" {
+  description = "Enable CentOS Stream 8-20210210.0 aarch64 qcow2"
+  type        = bool
+}
+
 variable "enable_cirros_051_x86_64_raw" {
   description = "Enable CirrOS 0.5.1 x86_64 raw images"
   type        = bool

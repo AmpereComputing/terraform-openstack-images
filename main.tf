@@ -27,6 +27,11 @@ module "centos-atomic" {
   enable_centos_atomic_host_x86_64_qcow2 = var.enable_centos_atomic_host_x86_64_qcow2
   enable_centos_atomic_host_x86_64_raw   = var.enable_centos_atomic_host_x86_64_raw
 }
+module "centos-stream" {
+  source                                 = "./centos-atomic"
+  enable_centos_stream_8_aarch64_qcow2 = var.enable_centos_stream_8_aarch64_qcow2
+  enable_centos_stream_8_aarch64_raw   = var.enable_centos_stream_8_aarch64_raw
+}
 
 module "cirros" {
   source                          = "./cirros"
