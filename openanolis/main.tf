@@ -10,4 +10,3 @@ resource "openstack_images_image_v2" "anolisos_82_GA_aarch64_ANCK_qcow2" {
     os_distro = "anolis"
   }
 }
-~      
