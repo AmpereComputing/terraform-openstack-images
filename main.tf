@@ -115,6 +115,11 @@ module "kali-linux" {
   enable_kali_linux_2019_3_amd64_raw   = var.enable_kali_linux_2019_3_amd64_raw
 }
 
+module "openanolis" {
+  source                           = "./openanolis"
+  enable_anolisos_82_aarch64_qcow2 = var.enable_anolisos_82_aarch64_qcow2
+}
+
 module "openeuler" {
   source                                  = "./openeuler"
   enable_openeuler_2003-LTS_x86_64_raw    = var.enable_openeuler_2003-LTS_x86_64_raw

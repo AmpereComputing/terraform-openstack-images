@@ -368,6 +368,10 @@ variable "enable_openeuler_2003-LTS_aarch64_qcow2" {
   description = "Enable openEuler-20.03-LTS.aarch64.qcow2"
   type        = bool
 }
+variable "enable_anolisos_82_aarch64_qcow2" {
+  description = "Enable enable_anolisos_82_aarch64_qcow2"
+  type        = bool
+}
 
 variable "enable_opensuse_leap_150_x86_64_qcow2" {
   description = "Enable openSUSE Leap 15.0 x86_64 qcow2 images"
