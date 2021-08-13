@@ -78,5 +78,16 @@ then
   qemu-img convert -f qcow2 -O raw CentOS-8-GenericCloud-8.${CENTOS_VERSION}.aarch64.qcow2 CentOS-8-GenericCloud-8.${CENTOS_VERSION}.aarch64.raw
 fi
 
+if [ $1 = "8.4" ]
+then
+  echo "Centos 8.4 Detected"
+  export CENTOS_VERSION='4.2105-20210603.0'
+  echo -n "Downloading and extracting inline:"
+  wget -c http://cloud.centos.org/centos/8/aarch64/images/CentOS-8-GenericCloud-8.${CENTOS_VERSION}.aarch64.qcow2 -O CentOS-8-GenericCloud-8.${CENTOS_VERSION}.aarch64.qcow2
+  echo -n "Converting images."
+  qemu-img convert -f qcow2 -O raw CentOS-8-GenericCloud-8.${CENTOS_VERSION}.aarch64.qcow2 CentOS-8-GenericCloud-8.${CENTOS_VERSION}.aarch64.raw
+fi
+
+
 
 cd $PROJECT_DIR

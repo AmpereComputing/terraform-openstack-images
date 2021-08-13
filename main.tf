@@ -20,6 +20,8 @@ module "centos" {
   enable_centos_8_2_aarch64_raw      = var.enable_centos_8_2_aarch64_raw
   enable_centos_8_3_aarch64_qcow2    = var.enable_centos_8_3_aarch64_qcow2
   enable_centos_8_3_aarch64_raw      = var.enable_centos_8_3_aarch64_raw
+  enable_centos_8_4_aarch64_qcow2    = var.enable_centos_8_4_aarch64_qcow2
+  enable_centos_8_4_aarch64_raw      = var.enable_centos_8_4_aarch64_raw
 }
 
 module "centos-atomic" {

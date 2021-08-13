@@ -245,3 +245,36 @@ resource "openstack_images_image_v2" "centos_8_3_aarch64_qcow2" {
   }
 }
 
+resource "null_resource" "download-extract-image-centos-8-4-aarch64" {
+  count = var.enable_centos_8_4_aarch64_raw ? 1:0
+  provisioner "local-exec" {
+    command = "${path.module}/centos_aarch64_image.sh 8.4"
+  }
+}
+resource "openstack_images_image_v2" "centos_8_4_aarch64_raw" {
+  count = var.enable_centos_8_4_aarch64_raw ? 1:0
+  name   = "CentOS-8-GenericCloud-8.4.2105-20210603.0.aarch64.raw"
+  local_file_path = pathexpand("~/.terraform/image_cache/CentOS-8-GenericCloud-8.4.2105-20210603.0.aarch64.raw")
+  container_format = "bare"
+  disk_format = "raw"
+  visibility = "public"
+  depends_on = [
+    null_resource.download-extract-image-centos-8-4-aarch64,
+  ]
+
+  properties = {
+    os_distro = "centos"
+  }
+}
+
+resource "openstack_images_image_v2" "centos_8_4_aarch64_qcow2" {
+  count = var.enable_centos_8_4_aarch64_qcow2 ? 1:0
+  name   = "CentOS-8-GenericCloud-8.4.2105-20210603.0.aarch64.qcow2"
+  image_source_url = "http://cloud.centos.org/centos/8/aarch64/images/CentOS-8-GenericCloud-8.4.2105-20210603.0.qcow2"
+  container_format = "bare"
+  disk_format = "qcow2"
+  visibility = "public"
+  properties = {
+    os_distro = "centos"
+  }
+}

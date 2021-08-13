@@ -56,3 +56,13 @@ variable "enable_centos_8_3_aarch64_qcow2" {
   description = "Enable 8.3.2011-20201204.2 aarch64 qcow2"
   default     = 0
 }
+
+variable "enable_centos_8_4_aarch64_raw" {
+  description = "CentOS-8-GenericCloud-8.4.2105-20210603.0.aarch64 raw"
+  default     = 0
+}
+
+variable "enable_centos_8_4_aarch64_qcow2" {
+  description = "Enable CentOS-8-GenericCloud-8.4.2105-20210603.0.aarch64 qcow2"
+  default     = 0
+}
